@@ -194,7 +194,7 @@ Dir["./data/disposable/**/*.txt"].map do |file|
   domains += normalize_list(File.read(file).lines)
 end
 
-ignore_domains = %w[gmail.com hotmail.com]
+ignore_domains = %w[gmail.com hotmail.com outlook.com]
 
 puts "=> Normalize domains (count: #{domains.size})"
 domains = domains
