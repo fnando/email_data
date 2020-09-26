@@ -12,3 +12,10 @@ for input in $(ls -1 data/*.txt); do
 done
 
 npm publish --access=public
+
+terminal-notifier \
+  -message "Just published a new npm version." \
+  -ignoreDnD \
+  -title "email_data" \
+  -group homebrew \
+  &> /dev/null
