@@ -14,7 +14,7 @@ git_status=$(git status 2> /dev/null | tr "\\n" " ")
 
 if [[ "$git_status" =~ "nothing to commit" ]]; then
   terminal-notifier \
-    -message "No changes detected. Skipping new gem." \
+    -message "No changes detected. Skipping new packages." \
     -ignoreDnD \
     -title "email_data" \
     -group homebrew \
