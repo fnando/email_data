@@ -5,6 +5,8 @@ set -e
 source $HOME/.zsh/exports.sh
 source $HOME/.zsh/asdf.sh
 
+asdf local node 12.18.4
+
 for input in $(ls -1 data/*.txt); do
   name=$(basename $input)
   output=data/json/"${name%.txt}.json"
