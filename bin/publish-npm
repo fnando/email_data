@@ -8,12 +8,4 @@ for input in $(ls -1 data/*.txt); do
   jq -R -s -c 'split("\n")' < $input > $output
 done
 
-version=$(cat VERSION)
-jq --arg version "$version" '.version = $version' package.json > package.json
-
-git add .
-git commit -m "Bump up version."
-git push
-git push --tags
-
 npm publish --public

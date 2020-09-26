@@ -24,6 +24,11 @@ fi
 
 date "+%s" > VERSION
 
+version=$(cat VERSION)
+package_json=$(cat package.json | jq --arg version "$version" '.version = $version')
+
+echo $package_json | jq --tab > package.json
+
 git add .
 git commit -m "Bump up version."
 git push
