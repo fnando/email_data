@@ -2,6 +2,9 @@
 
 set -e
 
+source $HOME/.zsh/exports.sh
+source $HOME/.zsh/asdf.sh
+
 for input in $(ls -1 data/*.txt); do
   name=$(basename $input)
   output=data/json/"${name%.txt}.json"
