@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "helpers"
+
+puts "=> Fetching tld list"
+tlds = http_request(:get, "https://data.iana.org/TLD/tlds-alpha-by-domain.txt").body.lines
+tlds.shift # remove update notice
+
+tlds = tlds
+       .map(&:downcase)
+       .map(&:strip)
+       .map {|tld| SimpleIDN.to_ascii(tld) }
+
+puts "=> Saving tlds.txt"
+save_file("tlds.txt", normalize_list(tlds))
+
+puts "=> Fetching country tld list"
+country_tlds = JSON.parse(
+  http_request(:get, "https://github.com/samayo/country-json/raw/master/src/country-by-domain-tld.json").body,
+  symbolize_names: true
+)
+country_tlds = country_tlds
+               .reject {|info| info[:tld].nil? }
+               .map {|info| info[:tld].gsub(/^\./, "") }
+
+puts "=> Saving country_tlds.txt"
+save_file("country_tlds.txt", normalize_list(country_tlds))
