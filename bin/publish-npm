@@ -8,4 +8,4 @@ for input in $(ls -1 data/*.txt); do
   jq -R -s -c 'split("\n")' < $input > $output
 done
 
-npm publish --public
+npm publish --access=public

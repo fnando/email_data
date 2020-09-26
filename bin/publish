@@ -25,7 +25,7 @@ fi
 date "+%s" > VERSION
 
 version=$(cat VERSION)
-package_json=$(cat package.json | jq --arg version "$version" '.version = $version')
+package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
 
 echo $package_json | jq --tab > package.json
 
