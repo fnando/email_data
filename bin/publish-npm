@@ -9,7 +9,7 @@ for input in $(ls -1 data/*.txt); do
 done
 
 version=$(cat VERSION)
-jq --arg version "$version" '.version = $version' package.json
+jq --arg version "$version" '.version = $version' package.json > package.json
 
 git add .
 git commit -m "Bump up version."
