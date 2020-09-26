@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+set -e
+
+source $HOME/.zsh/exports.sh
+source $HOME/.zsh/asdf.sh
+
+git pull --rebase
+git push
+
+./bin/sync
+
+git_status=$(git status 2> /dev/null | tr "\\n" " ")
+
+if [[ "$git_status" =~ "nothing to commit" ]]; then
+  terminal-notifier \
+    -message "No changes detected. Skipping new gem." \
+    -ignoreDnD \
+    -title "email_data" \
+    -group homebrew \
+    &> /dev/null
+  exit
+fi
+
+date "+%s" > VERSION
+
+git add .
+git commit -m "Bump up version."
+git push
+
+./bin/publish-gem
+./bin/publish-npm

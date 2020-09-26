@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+for input in $(ls -1 data/*.txt); do
+  name=$(basename $input)
+  output=data/json/"${name%.txt}.json"
+  jq -R -s -c 'split("\n")' < $input > $output
+done
+
+version=$(cat VERSION)
+jq --arg version "$version" '.version = $version' package.json
+
+git add .
+git commit -m "Bump up version."
+git push
+git push --tags
+
+npm publish --public
