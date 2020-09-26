@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "helpers"
+
+threads = []
+
+threads << thread { load_github_url("https://gist.github.com/fnando/dafe542cac13f831bbf5521a55248116/raw/free_email_providers.txt") }
+
+threads.each_slice(5) do |slice|
+  slice.each(&:join)
+end
+
+threads.clear
+
+domains = []
+
+puts "=> Loading free_email_domains.txt"
+domains += normalize_list(File.read("#{__dir__}/../data/free_email_domains.txt").lines)
+
+puts "=> Loading manual/free_email_domains.txt"
+domains += normalize_list(File.read("#{__dir__}/../data/manual/free_email_domains.txt").lines)
+
+ignore_domains = %w[]
+
+puts "=> Normalize domains (count: #{domains.size})"
+domains = domains
+          .uniq
+          .map {|domain| RootDomain.call(domain.split("@").last.downcase) }
+          .compact
+          .uniq
+          .reject {|domain| ignore_domains.include?(domain) }
+
+puts "=> Saving domains (count: #{domains.size})"
+save_file("free_email_domains.txt", normalize_list(domains))

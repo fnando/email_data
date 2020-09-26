@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+git pull --rebase
+git push
+
+./bin/sync
+
+git_status=$(git status 2> /dev/null | tr "\\n" " ")
+
+if [[ "$git_status" =~ "nothing to commit" ]]; then
+  terminal-notifier \
+    -message "No changes detected. Skipping new gem." \
+    -ignoreDnD \
+    -title "email_data" \
+    -group homebrew \
+    &> /dev/null
+  exit
+fi
+
+date "+%s" > VERSION
+
+git add .
+git commit -m "Bump up version."
+git push
+rake release
+
+terminal-notifier \
+  -message "Just published a new gem version." \
+  -ignoreDnD \
+  -title "email_data" \
+  -group homebrew \
+  &> /dev/null
