@@ -8,7 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nando Vieira"]
   spec.email         = ["me@fnando.com"]
 
-  spec.summary       = "Data"
+  spec.summary       = "This project is a compilation of datasets related to " \
+                       "emails. Includes disposable emails, disposable " \
+                       "domains, and free email services."
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/fnando/email_data"
   spec.license       = "MIT"

@@ -6,5 +6,6 @@
 /pkg/
 /spec/reports/
 /tmp/
-/data/disposable/**/**
+/data/disposable/**/*
+/data/json/**/*
 Gemfile.lock
