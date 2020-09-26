@@ -11,6 +11,8 @@ this data available.
 
 ## Installation
 
+### Ruby
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -25,7 +27,7 @@ Or install it yourself as:
 
     $ gem install email_data
 
-## Usage
+#### Usage
 
 ```ruby
 require "email_data"
@@ -42,6 +44,26 @@ EmailData.disposable_emails
 
 # List of free email services.
 EmailData.free_email_domains
+```
+
+### Node.js
+
+```console
+$ yarn add @fnando/email_data
+```
+
+or
+
+```console
+$ npm install @fnando/email_data
+```
+
+#### Usage
+
+```js
+const disposableEmails = require("@fnando/email_data/data/json/disposable_emails.json");
+const disposableDomains = require("@fnando/email_data/data/json/disposable_domains.json");
+const freeEmailDomains = require("@fnando/email_data/data/json/free_email_domains.json");
 ```
 
 ## Dataset
