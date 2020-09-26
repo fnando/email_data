@@ -13,8 +13,6 @@ require "logger"
 require "simpleidn"
 require "timeout"
 require "active_support/all"
-require "whois"
-require "whois-parser"
 require "root_domain"
 
 USER_AGENT = [

@@ -8,6 +8,9 @@ source $HOME/.zsh/asdf.sh
 git pull --rebase
 git push
 
+gem install bundler
+bundle update
+
 ./bin/sync
 
 git_status=$(git status 2> /dev/null | tr "\\n" " ")
