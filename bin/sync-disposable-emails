@@ -194,18 +194,18 @@ Dir["./data/disposable/**/*.txt"].map do |file|
   domains += normalize_list(File.read(file).lines)
 end
 
-ignore_domains = normalize_list(File.read("#{__dir__}/../data/manual/free_email_domains.txt").lines)
+ignore_domains = normalize_list(File.read("#{__dir__}/../data/free_email_domains.txt").lines)
+                 .map {|domain| RootDomain.call(domain) }
 
 puts "=> Normalize domains (count: #{domains.size})"
 domains = domains
-          .uniq
           .map {|domain| RootDomain.call(domain.split("@").last.downcase) }
           .compact
           .uniq
-          .reject {|domain| ignore_domains.include?(domain) }
+          .select {|domain| EmailData.tlds.include?(domain.split(".").last) }
 
 puts "=> Saving domains (count: #{domains.size})"
-save_file("disposable_domains.txt", domains)
+save_file("disposable_domains.txt", domains - ignore_domains)
 
 emails = gmailnator
 emails += normalize_list(File.read("#{__dir__}/../data/manual/disposable_emails.txt").lines)
