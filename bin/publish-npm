@@ -18,6 +18,6 @@ npm publish --access=public
 terminal-notifier \
   -message "Just published a new npm version." \
   -ignoreDnD \
-  -title "email_data" \
+  -title "email_data_npm" \
   -group homebrew \
   &> /dev/null
