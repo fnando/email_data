@@ -46,6 +46,128 @@ EmailData.disposable_emails
 EmailData.free_email_domains
 ```
 
+#### Data sources
+
+By default, Ruby will load data from filesystem. You may want to load this data
+from the database instead. `email-data` has support for ActiveRecord out of the
+box. To use the ActiveRecord adapter, you must load
+`email_data/source/active_record.rb`. You can easily do it so with Bundler's
+`require` key.
+
+```ruby
+gem "email_data", require: "email_data/source/active_record"
+```
+
+Then, you need to assign the new data source.
+
+```ruby
+EmailData.source = EmailData::Source::ActiveRecord
+```
+
+If you need to configure a different database connection than the one defined by
+`ActiveRecord::Base`, use `EmailData::Source::ActiveRecord::ApplicationRecord`
+for that.
+
+##### Creating the tables
+
+To create the tables, use the migration code below (tweak it accordingly if you
+use something different than PostgreSQL, or don't want to use `citext`).
+
+```ruby
+class SetupEmailData < ActiveRecord::Migration[6.1]
+  def change
+    enable_extension "citext"
+
+    create_table :tlds do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :tlds, :name, unique: true
+
+    create_table :country_tlds do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :country_tlds, :name, unique: true
+
+    create_table :disposable_emails do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :disposable_emails, :name, unique: true
+
+    create_table :disposable_domains do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :disposable_domains, :name, unique: true
+
+    create_table :free_email_domains do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :free_email_domains, :name, unique: true
+  end
+end
+```
+
+##### Loading the data
+
+With PostgreSQL, you load the data using the `COPY` command. First, you'll need
+to discover where your gems are being installed. Use `gem list` for that.
+
+```console
+$ gem list email_data -d
+
+*** LOCAL GEMS ***
+
+email_data (1601479967, 1601260789)
+    Author: Nando Vieira
+    Homepage: https://github.com/fnando/email_data
+    License: MIT
+    Installed at (1601479967): /usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0
+    This project is a compilation of datasets related to emails.
+    Includes disposable emails, disposable domains, and free email
+    services.
+```
+
+The you can load each dataset using `COPY`:
+
+```sql
+COPY tlds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/tlds.txt';
+COPY country_tlds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/country_tlds.txt';
+COPY disposable_emails (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_emails.txt';
+COPY disposable_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_domains.txt';
+COPY free_email_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/free_email_domains.txt';
+```
+
+Alternatively, you could create a migrate that executes that same command; given
+that you'd be running Ruby code, you can replace the steps to find the gem path
+with `EmailData.data_dir`.
+
+```ruby
+class LoadEmailData < ActiveRecord::Migration[6.1]
+  def change
+    copy = lambda do |table_name|
+      connection = ActiveRecord::Base.connection
+      data_path = EmailData.data_dir
+
+      connection.execute <<~PG
+        COPY #{table_name} (name)
+        FROM '#{data_path.join(table_name)}.txt'
+        (FORMAT CSV)
+      PG
+    end
+
+    copy.call(:tlds)
+    copy.call(:country_tlds)
+    copy.call(:disposable_emails)
+    copy.call(:disposable_domains)
+    copy.call(:free_email_domains)
+  end
+end
+```
+
 ### Node.js
 
 ```console

@@ -5,3 +5,16 @@ inherit_gem:
 AllCops:
   TargetRubyVersion: 2.7
   NewCops: enable
+
+Metrics/AbcSize:
+  Exclude:
+    - test/support/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - test/support/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - email_data.gemspec
+    - test/support/**/*
