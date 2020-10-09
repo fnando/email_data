@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.acronym "TLD"
+end
+
 ActiveRecord::Base.establish_connection(
   ENV.fetch("DATABASE_URL", "postgresql:///test")
 )
@@ -7,44 +11,32 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Schema.define(version: 0) do
   enable_extension "citext"
 
-  create_table :tlds do |t|
-    t.citext :name, null: false
+  create = lambda do |name|
+    drop_table name if table_exists?(name)
+
+    create_table name do |t|
+      t.citext :name, null: false
+    end
+
+    add_index name, :name, unique: true
   end
 
-  add_index :tlds, :name, unique: true
-
-  create_table :country_tlds do |t|
-    t.citext :name, null: false
-  end
-
-  add_index :country_tlds, :name, unique: true
-
-  create_table :disposable_emails do |t|
-    t.citext :name, null: false
-  end
-
-  add_index :disposable_emails, :name, unique: true
-
-  create_table :disposable_domains do |t|
-    t.citext :name, null: false
-  end
-
-  add_index :disposable_domains, :name, unique: true
-
-  create_table :free_email_domains do |t|
-    t.citext :name, null: false
-  end
-
-  add_index :free_email_domains, :name, unique: true
+  create.call(:tlds)
+  create.call(:country_tlds)
+  create.call(:disposable_emails)
+  create.call(:disposable_domains)
+  create.call(:free_email_domains)
 
   copy = lambda do |table_name|
-    query = <<~PG
-      COPY
-      #{table_name} (name)
-      FROM '#{__dir__}/../../data/#{table_name}.txt'
-      (FORMAT CSV)
-    PG
-    ActiveRecord::Base.connection.execute(query)
+    values = EmailData::Source::FileSystem.public_send(table_name)
+    model_name = table_name.to_s.singularize.camelize.to_sym
+    model_class = EmailData::Source::ActiveRecord.const_get(model_name)
+
+    entries = values.map do |value|
+      {name: value}
+    end
+
+    model_class.upsert_all(entries)
   end
 
   copy.call(:tlds)
@@ -52,7 +44,4 @@ ActiveRecord::Schema.define(version: 0) do
   copy.call(:disposable_emails)
   copy.call(:disposable_domains)
   copy.call(:free_email_domains)
-
-rescue ActiveRecord::StatementInvalid
-  puts "=> Test migrations already applied; skipping"
 end

@@ -1,5 +1,15 @@
 # EmailData
 
+- Ruby:
+  [![Tests](https://github.com/fnando/email_data/workflows/Tests/badge.svg)](https://github.com/fnando/email_data/actions?query=workflow%3ATests)
+  [![Gem](https://img.shields.io/gem/v/email_data.svg)](https://rubygems.org/gems/email_data)
+  [![Gem](https://img.shields.io/gem/dt/email_data.svg?label=gems%20downloads)](https://rubygems.org/gems/email_data)
+- NPM:
+  [![NPM package version](https://img.shields.io/npm/v/@fnando/email_data.svg)](https://www.npmjs.com/package/@fnando/email_data)
+  [![NPM Downloads](https://img.shields.io/npm/dt/@fnando/email_data?label=npm%20downloads)](https://www.npmjs.com/package/@fnando/email_data)
+- License:
+  ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=4da3dd)
+
 This project is a compilation of datasets related to emails.
 
 - Disposable emails
