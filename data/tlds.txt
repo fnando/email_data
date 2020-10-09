@@ -612,7 +612,6 @@ institute
 insurance
 insure
 int
-intel
 international
 intuit
 investments

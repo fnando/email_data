@@ -177,6 +177,7 @@ py
 qa
 re
 ro
+rs
 ru
 rw
 sa
