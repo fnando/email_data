@@ -88,7 +88,7 @@ def gmailnator
 end
 
 def domain_scraping(name, url, selector)
-  timeout(10) do
+  Timeout.timeout(10) do
     puts "=> Scraping #{url}"
 
     selector, value_selector = selector.split("::")
