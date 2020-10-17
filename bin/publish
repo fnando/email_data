@@ -5,6 +5,20 @@ set -e
 source $HOME/.zsh/exports.sh
 source $HOME/.zsh/asdf.sh
 
+lockfile=$(dirname $0)/../LOCK
+
+if [[ -f "$lockfile" ]]; then
+  terminal-notifier \
+    -message "Skipping script; repository is locked." \
+    -ignoreDnD \
+    -title "email_data" \
+    -group homebrew \
+    &> /dev/null
+  exit 1
+fi
+
+git reset --hard
+git checkout main
 git pull --rebase
 git push
 
@@ -19,7 +33,7 @@ if [[ "$git_status" =~ "nothing to commit" ]]; then
     -title "email_data" \
     -group homebrew \
     &> /dev/null
-  exit
+  exit 1
 fi
 
 date "+%s" > VERSION
@@ -28,6 +42,11 @@ version=$(cat VERSION)
 package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
 
 echo $package_json | jq --tab > package.json
+
+asdf local ruby 2.7.2
+
+gem install bundler
+bundle update
 
 git add .
 git commit -m "Bump up version."

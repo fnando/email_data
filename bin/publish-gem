@@ -5,11 +5,7 @@ set -e
 source $HOME/.zsh/exports.sh
 source $HOME/.zsh/asdf.sh
 
-asdf local ruby 2.7.1
-
-gem install bundler
-bundle update
-
+asdf local ruby 2.7.2
 rake release
 
 terminal-notifier \
