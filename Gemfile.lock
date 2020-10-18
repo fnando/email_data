@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    email_data (1603050808)
+    email_data (1603054658)
 
 GEM
   remote: https://rubygems.org/
