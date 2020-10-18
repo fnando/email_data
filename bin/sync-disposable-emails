@@ -162,7 +162,7 @@ threads << thread { domain_scraping("tempr", "https://tempr.email/", "select[nam
 threads << thread { domain_scraping("yepmail", "https://yepmail.co/", "select[name=domain] option::text()") }
 threads << thread { domain_scraping("fake_email_generator", "https://fakemailgenerator.net", "[data-mailhost]::attr(data-mailhost)") }
 threads << thread { domain_scraping("tempemails", "https://www.tempemails.net/", "select[name=domain] option::attr(value)") }
-threads << thread { domain_scraping("clipmails", "https://clipmails.com/", "select[name=domain] option::attr(value)") }
+threads << thread { domain_scraping("clipmails", "https://clipmails.com/", ".domain-selector::text()") }
 threads << thread { domain_scraping("1secmail", "https://www.1secmail.com/", "select[id=domain] option::attr(value)") }
 threads << thread { domain_scraping("emailfake", "https://generator.email", ".tt-suggestion p::text()") }
 threads << thread { domain_scraping("emailfake", "https://emailfake.com/", ".tt-suggestion p::text()") }
