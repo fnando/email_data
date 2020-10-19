@@ -42,6 +42,7 @@ bigpond.com
 bigpond.net.au
 bikerider.com
 birdlover.com
+bk.ru
 blader.com
 bluewin.ch
 blueyonder.co.uk
@@ -157,8 +158,10 @@ gardener.com
 geologist.com
 germanymail.com
 gmail.com
+gmx.com
 gmx.de
 gmx.net
+gmx.us
 googlemail.com
 graduate.org
 graphic-designer.com
@@ -188,6 +191,7 @@ imap-mail.com
 imap.cc
 imapmail.org
 iname.com
+inbox.ru
 innocent.com
 inorbit.com
 inoutbox.com
@@ -206,6 +210,7 @@ job4u.com
 journalist.com
 juno.com
 justemail.net
+keemail.me
 keromail.com
 kissfans.com
 kittymail.com
@@ -215,6 +220,7 @@ legislator.com
 letterboxes.org
 libero.it
 linuxmail.org
+list.ru
 live.ca
 live.co.uk
 live.com
@@ -224,6 +230,7 @@ live.it
 live.nl
 lobbyist.com
 lovecat.com
+lycos.com
 mac.com
 madonnafan.com
 mail-central.com
@@ -371,7 +378,10 @@ tiscali.it
 toke.com
 toothfairy.com
 torontomail.com
+tuta.io
+tutamail.com
 tutanota.com
+tutanota.de
 tvstar.com
 umpire.com
 usa.com
