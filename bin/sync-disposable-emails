@@ -196,6 +196,9 @@ end
 
 ignore_domains = normalize_list(File.read("#{__dir__}/../data/free_email_domains.txt").lines)
                  .map {|domain| RootDomain.call(domain) }
+ignore_domains += %w[
+  appleid.com
+]
 
 puts "=> Normalize domains (count: #{domains.size})"
 domains = domains
