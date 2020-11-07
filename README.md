@@ -15,6 +15,7 @@ This project is a compilation of datasets related to emails.
 - Disposable emails
 - Disposable domains
 - Free email services
+- Roles (e.g. info, spam, etc)
 
 The data is compiled from several different sources, so thank you all for making
 this data available.
@@ -54,6 +55,9 @@ EmailData.disposable_emails
 
 # List of free email services.
 EmailData.free_email_domains
+
+# List of roles. Can be used to filter out emails like info@ or all@.
+EmailData.roles
 ```
 
 #### Data sources

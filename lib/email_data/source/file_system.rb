@@ -23,6 +23,10 @@ module EmailData
         @free_email_domains ||= load_file("free_email_domains.txt")
       end
 
+      def self.roles
+        @roles ||= load_file("roles.txt")
+      end
+
       def self.load_file(filename)
         EmailData
           .data_dir

@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 0) do
   create.call(:disposable_emails)
   create.call(:disposable_domains)
   create.call(:free_email_domains)
+  create.call(:roles)
 
   copy = lambda do |table_name|
     values = EmailData::Source::FileSystem.public_send(table_name)
@@ -44,4 +45,5 @@ ActiveRecord::Schema.define(version: 0) do
   copy.call(:disposable_emails)
   copy.call(:disposable_domains)
   copy.call(:free_email_domains)
+  copy.call(:roles)
 end

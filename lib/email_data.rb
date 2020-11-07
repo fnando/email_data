@@ -15,7 +15,8 @@ module EmailData
                    :disposable_emails,
                    :country_tlds,
                    :free_email_domains,
-                   :tlds
+                   :tlds,
+                   :roles
   end
 
   def self.source=(source)

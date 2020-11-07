@@ -35,6 +35,10 @@ module EmailData
         self.table_name = "free_email_domains"
       end
 
+      class Role < ApplicationRecord
+        self.table_name = "roles"
+      end
+
       class Collection
         def initialize(model)
           @model = model
@@ -67,6 +71,10 @@ module EmailData
 
       def self.free_email_domains
         @free_email_domains ||= Collection.new(FreeEmailDomain)
+      end
+
+      def self.roles
+        @roles ||= Collection.new(Role)
       end
     end
   end

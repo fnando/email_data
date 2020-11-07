@@ -32,6 +32,10 @@ module Tests
                  "disposable domain"
         end
       end
+
+      test "returns roles" do
+        assert_includes EmailData.roles, "info"
+      end
     end
   end
 end
