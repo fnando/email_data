@@ -121,6 +121,12 @@ class SetupEmailData < ActiveRecord::Migration[6.1]
     end
 
     add_index :free_email_domains, :name, unique: true
+
+    create_table :roles do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :roles, :name, unique: true
   end
 end
 ```
@@ -153,6 +159,7 @@ COPY country_tlds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/em
 COPY disposable_emails (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_emails.txt';
 COPY disposable_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_domains.txt';
 COPY free_email_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/free_email_domains.txt';
+COPY roles (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/roles.txt';
 ```
 
 Alternatively, you could create a migrate that executes that same command; given
@@ -178,6 +185,7 @@ class LoadEmailData < ActiveRecord::Migration[6.1]
     copy.call(:disposable_emails)
     copy.call(:disposable_domains)
     copy.call(:free_email_domains)
+    copy.call(:roles)
   end
 end
 ```
@@ -200,6 +208,7 @@ $ npm install @fnando/email_data
 const disposableEmails = require("@fnando/email_data/data/json/disposable_emails.json");
 const disposableDomains = require("@fnando/email_data/data/json/disposable_domains.json");
 const freeEmailDomains = require("@fnando/email_data/data/json/free_email_domains.json");
+const roles = require("@fnando/email_data/data/json/roles.json");
 ```
 
 ## Dataset
@@ -213,8 +222,8 @@ like to add, please make a pull request against the files `data/manual/*.txt`.
   free email services must go here. E.g. `d.i.s.p.o.s.a.b.l.e+1234@gmail.com`
   must be added as `disposable@gmail.com`.
 - `data/manual/free_email_domains.txt`: only free email services must go here.
-  These are services that allow anyone to create an email account, even if it's
-  just a trial without credit cards.
+- `data/manual/roles.txt`: list of role-based user names like `info` or
+  `no-reply`.
 
 ## Development
 
