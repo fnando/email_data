@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    email_data (1604799858)
+    email_data (1604907377)
 
 GEM
   remote: https://rubygems.org/
@@ -60,7 +60,7 @@ GEM
     simpleidn (0.1.1)
       unf (~> 0.1.4)
     thread_safe (0.3.6)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
