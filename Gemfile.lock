@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    email_data (1605067682)
+    email_data (1605293459)
 
 GEM
   remote: https://rubygems.org/
@@ -40,13 +40,13 @@ GEM
     rexml (3.2.4)
     root_domain (0.1.0)
       simpleidn
-    rubocop (1.2.0)
+    rubocop (1.3.0)
       parallel (~> 1.10)
       parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8)
       rexml
-      rubocop-ast (>= 1.0.1)
+      rubocop-ast (>= 1.1.1)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (1.1.1)
