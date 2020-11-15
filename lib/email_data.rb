@@ -15,6 +15,7 @@ module EmailData
                    :disposable_emails,
                    :country_tlds,
                    :free_email_domains,
+                   :private_relays,
                    :tlds,
                    :slds,
                    :roles

@@ -43,6 +43,10 @@ module EmailData
         self.table_name = "roles"
       end
 
+      class PrivateRelay < ApplicationRecord
+        self.table_name = "private_relays"
+      end
+
       class Collection
         def initialize(model)
           @model = model
@@ -83,6 +87,10 @@ module EmailData
 
       def self.roles
         @roles ||= Collection.new(Role)
+      end
+
+      def self.private_relays
+        @private_relays ||= Collection.new(PrivateRelay)
       end
     end
   end

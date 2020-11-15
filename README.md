@@ -58,6 +58,18 @@ EmailData.free_email_domains
 
 # List of roles. Can be used to filter out emails like info@ or all@.
 EmailData.roles
+
+# List of private relays like Apple's Hide My Email.
+EmailData.private_relays
+
+# List of country tlds.
+EmailData.country_tlds
+
+# List of official tlds.
+EmailData.tlds
+
+# List of second-level domains.
+EmailData.slds
 ```
 
 #### Data sources
@@ -155,11 +167,13 @@ The you can load each dataset using `COPY`:
 
 ```sql
 COPY tlds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/tlds.txt';
+COPY slds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/slds.txt';
 COPY country_tlds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/country_tlds.txt';
 COPY disposable_emails (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_emails.txt';
 COPY disposable_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_domains.txt';
 COPY free_email_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/free_email_domains.txt';
 COPY roles (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/roles.txt';
+COPY private_relays (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/private_relays.txt';
 ```
 
 Alternatively, you could create a migrate that executes that same command; given
@@ -181,11 +195,13 @@ class LoadEmailData < ActiveRecord::Migration[6.1]
     end
 
     copy.call(:tlds)
+    copy.call(:slds)
     copy.call(:country_tlds)
     copy.call(:disposable_emails)
     copy.call(:disposable_domains)
     copy.call(:free_email_domains)
     copy.call(:roles)
+    copy.call(:private_relays)
   end
 end
 ```
@@ -209,6 +225,10 @@ const disposableEmails = require("@fnando/email_data/data/json/disposable_emails
 const disposableDomains = require("@fnando/email_data/data/json/disposable_domains.json");
 const freeEmailDomains = require("@fnando/email_data/data/json/free_email_domains.json");
 const roles = require("@fnando/email_data/data/json/roles.json");
+const privateRelays = require("@fnando/email_data/data/json/private_relays.json");
+const tlds = require("@fnando/email_data/data/json/tlds.json");
+const slds = require("@fnando/email_data/data/json/slds.json");
+const cctlds = require("@fnando/email_data/data/json/country_tlds.json");
 ```
 
 ## Dataset
@@ -224,6 +244,8 @@ like to add, please make a pull request against the files `data/manual/*.txt`.
 - `data/manual/free_email_domains.txt`: only free email services must go here.
 - `data/manual/roles.txt`: list of role-based user names like `info` or
   `no-reply`.
+- `data/manual/private_relays`: list of private relay services, like Apple's
+  Hide My Email.
 
 ## Development
 

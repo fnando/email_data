@@ -31,6 +31,10 @@ module EmailData
         @roles ||= load_file("roles.txt")
       end
 
+      def self.private_relays
+        @private_relays ||= load_file("private_relays.txt")
+      end
+
       def self.load_file(filename)
         EmailData
           .data_dir
