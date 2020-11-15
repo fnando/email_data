@@ -110,6 +110,12 @@ class SetupEmailData < ActiveRecord::Migration[6.1]
 
     add_index :tlds, :name, unique: true
 
+    create_table :slds do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :slds, :name, unique: true
+
     create_table :country_tlds do |t|
       t.citext :name, null: false
     end
@@ -139,6 +145,12 @@ class SetupEmailData < ActiveRecord::Migration[6.1]
     end
 
     add_index :roles, :name, unique: true
+
+    create_table :private_relays do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :private_relays, :name, unique: true
   end
 end
 ```
