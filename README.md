@@ -256,7 +256,7 @@ like to add, please make a pull request against the files `data/manual/*.txt`.
 - `data/manual/free_email_domains.txt`: only free email services must go here.
 - `data/manual/roles.txt`: list of role-based user names like `info` or
   `no-reply`.
-- `data/manual/private_relays`: list of private relay services, like Apple's
+- `data/manual/private_relays.txt`: list of private relay services, like Apple's
   Hide My Email.
 
 ## Development
