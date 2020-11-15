@@ -12,6 +12,11 @@ module Tests
         refute_includes EmailData.country_tlds, "app"
       end
 
+      test "returns slds" do
+        assert_includes EmailData.slds, "gov.br"
+        refute_includes EmailData.slds, "br"
+      end
+
       test "returns disposable domains" do
         assert_includes EmailData.disposable_domains, "dispostable.com"
       end

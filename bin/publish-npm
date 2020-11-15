@@ -7,12 +7,6 @@ source $HOME/.zsh/asdf.sh
 
 asdf local nodejs 12.18.4
 
-for input in $(ls -1 data/*.txt); do
-  name=$(basename $input)
-  output=data/json/"${name%.txt}.json"
-  jq -R -s -c 'split("\n")' < $input > $output
-done
-
 npm publish --access=public
 
 terminal-notifier \

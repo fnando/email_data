@@ -26,3 +26,18 @@ country_tlds = country_tlds
 
 puts "=> Saving country_tlds.txt"
 save_file("country_tlds.txt", normalize_list(country_tlds))
+
+puts "=> Fetching sld list"
+response = http_request(:get, "https://publicsuffix.org/list/public_suffix_list.dat")
+content, _ = response.body.split("END ICANN DOMAINS")
+
+slds = content
+       .lines
+       .map {|line| line.gsub(/^\*\./, "") }
+       .map(&:strip)
+       .reject(&:empty?)
+       .reject {|line| line.start_with?("/") }
+       .map {|line| line.gsub(/^([!*.]+)/, "") }
+       .reject {|line| line.split(".").size == 1 }
+
+save_file("slds.txt", normalize_list(slds))

@@ -2,6 +2,7 @@
 
 ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym "TLD"
+  inflect.acronym "SLD"
 end
 
 ActiveRecord::Base.establish_connection(
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(version: 0) do
   end
 
   create.call(:tlds)
+  create.call(:slds)
   create.call(:country_tlds)
   create.call(:disposable_emails)
   create.call(:disposable_domains)
@@ -41,6 +43,7 @@ ActiveRecord::Schema.define(version: 0) do
   end
 
   copy.call(:tlds)
+  copy.call(:slds)
   copy.call(:country_tlds)
   copy.call(:disposable_emails)
   copy.call(:disposable_domains)

@@ -182,6 +182,10 @@ threads.clear
 
 domains = []
 
+puts "=> Saving private relays"
+private_relays = normalize_list(File.read("#{__dir__}/../data/manual/private_relays.txt").lines)
+save_file("private_relays.txt", private_relays)
+
 puts "=> Loading disposable_domains.txt"
 domains += normalize_list(File.read("#{__dir__}/../data/disposable_domains.txt").lines)
 
@@ -196,9 +200,8 @@ end
 
 ignore_domains = normalize_list(File.read("#{__dir__}/../data/free_email_domains.txt").lines)
                  .map {|domain| RootDomain.call(domain) }
-ignore_domains += %w[
-  appleid.com
-]
+ignore_domains += normalize_list(File.read("#{__dir__}/../data/private_relays.txt").lines)
+                  .map {|line| RootDomain.call(line) }
 
 puts "=> Normalize domains (count: #{domains.size})"
 domains = domains

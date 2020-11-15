@@ -5,3 +5,5 @@ echo
 ./bin/sync-free-emails
 echo
 ./bin/sync-disposable-emails
+echo
+./bin/export-json-files

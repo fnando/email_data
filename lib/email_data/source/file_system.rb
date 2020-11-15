@@ -7,6 +7,10 @@ module EmailData
         @tlds ||= load_file("tlds.txt")
       end
 
+      def self.slds
+        @slds ||= load_file("slds.txt")
+      end
+
       def self.country_tlds
         @country_tlds ||= load_file("country_tlds.txt")
       end

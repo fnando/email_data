@@ -16,6 +16,7 @@ module EmailData
                    :country_tlds,
                    :free_email_domains,
                    :tlds,
+                   :slds,
                    :roles
   end
 

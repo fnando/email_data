@@ -19,6 +19,10 @@ module EmailData
         self.table_name = "tlds"
       end
 
+      class SLD < ApplicationRecord
+        self.table_name = "slds"
+      end
+
       class CountryTLD < ApplicationRecord
         self.table_name = "country_tlds"
       end
@@ -55,6 +59,10 @@ module EmailData
 
       def self.tlds
         @tlds ||= Collection.new(TLD)
+      end
+
+      def self.slds
+        @slds ||= Collection.new(SLD)
       end
 
       def self.country_tlds
