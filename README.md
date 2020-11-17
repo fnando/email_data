@@ -4,8 +4,8 @@
 [![Code Climate](https://codeclimate.com/github/fnando/email_data/badges/gpa.svg)](https://codeclimate.com/github/fnando/email_data)
 [![Gem version](https://img.shields.io/gem/v/email_data.svg?label=Gem%20version)](https://rubygems.org/gems/email_data)
 [![Gem downloads](https://img.shields.io/gem/dt/email_data.svg?label=Gem%20downloads)](https://rubygems.org/gems/email_data)
-[![NPM version](https://img.shields.io/gem/v/%40fnando%2Femail_data.svg?label=NPM%20version)](https://npmjs.org/package/@fnando/email_data)
-[![NPM downloads](https://img.shields.io/gem/dt/%40fnando%2Femail_data.svg?label=NPM%20downloads)](https://npmjs.org/package/@fnando/email_data)
+[![NPM version](https://img.shields.io/npm/v/%40fnando%2Femail_data.svg?label=NPM%20version)](https://npmjs.org/package/@fnando/email_data)
+[![NPM downloads](https://img.shields.io/npm/dt/%40fnando%2Femail_data.svg?label=NPM%20downloads)](https://npmjs.org/package/@fnando/email_data)
 
 This project is a compilation of datasets related to emails.
 
