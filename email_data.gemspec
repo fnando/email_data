@@ -1,23 +1,29 @@
 # frozen_string_literal: true
 
-require_relative "lib/email_data/version"
+require_relative "./lib/email_data/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "email_data"
-  spec.version       = EmailData::VERSION
-  spec.authors       = ["Nando Vieira"]
-  spec.email         = ["me@fnando.com"]
+  spec.name    = "email_data"
+  spec.version = EmailData::VERSION
+  spec.authors = ["Nando Vieira"]
+  spec.email   = ["me@fnando.com"]
 
-  spec.summary       = "This project is a compilation of datasets related to " \
-                       "emails. Includes disposable emails, disposable " \
-                       "domains, and free email services."
-  spec.description   = spec.summary
-  spec.homepage      = "https://github.com/fnando/email_data"
-  spec.license       = "MIT"
+  spec.summary     = "This project is a compilation of datasets related to " \
+                     "emails. Includes disposable emails, disposable " \
+                     "domains, and free email services."
+  spec.description = spec.summary
+  spec.license     = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
 
+  github_url = "https://github.com/fnando/email_data"
+  github_tree_url = "#{github_url}/tree/v#{spec.version}"
+
+  spec.homepage = github_url
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["bug_tracker_uri"] = "#{github_url}/issues"
+  spec.metadata["source_code_uri"] = github_tree_url
+  spec.metadata["documentation_uri"] = "#{github_tree_url}/README.md"
+  spec.metadata["license_uri"] = "#{github_tree_url}/LICENSE.md"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`

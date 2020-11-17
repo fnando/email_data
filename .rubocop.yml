@@ -6,15 +6,11 @@ AllCops:
   TargetRubyVersion: 2.6
   NewCops: enable
 
+Metrics/BlockLength:
+  Enabled: false
+
 Metrics/AbcSize:
-  Exclude:
-    - test/support/**/*
+  Enabled: false
 
 Metrics/MethodLength:
-  Exclude:
-    - test/support/**/*
-
-Metrics/BlockLength:
-  Exclude:
-    - email_data.gemspec
-    - test/support/**/*
+  Enabled: false

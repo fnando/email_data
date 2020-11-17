@@ -1,14 +1,11 @@
-# EmailData
+# email_data
 
-- Ruby:
-  [![Tests](https://github.com/fnando/email_data/workflows/Tests/badge.svg)](https://github.com/fnando/email_data/actions?query=workflow%3ATests)
-  [![Gem](https://img.shields.io/gem/v/email_data.svg)](https://rubygems.org/gems/email_data)
-  [![Gem](https://img.shields.io/gem/dt/email_data.svg?label=gems%20downloads)](https://rubygems.org/gems/email_data)
-- NPM:
-  [![NPM package version](https://img.shields.io/npm/v/@fnando/email_data.svg)](https://www.npmjs.com/package/@fnando/email_data)
-  [![NPM Downloads](https://img.shields.io/npm/dt/@fnando/email_data?label=npm%20downloads)](https://www.npmjs.com/package/@fnando/email_data)
-- License:
-  ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=4da3dd)
+[![Tests](https://github.com/fnando/email_data/workflows/ruby-tests/badge.svg)](https://github.com/fnando/email_data)
+[![Code Climate](https://codeclimate.com/github/fnando/email_data/badges/gpa.svg)](https://codeclimate.com/github/fnando/email_data)
+[![Gem version](https://img.shields.io/gem/v/email_data.svg?label=Gem%20version)](https://rubygems.org/gems/email_data)
+[![Gem downloads](https://img.shields.io/gem/dt/email_data.svg?label=Gem%20downloads)](https://rubygems.org/gems/email_data)
+[![NPM version](https://img.shields.io/gem/v/%40fnando%2Femail_data.svg?label=NPM%20version)](https://npmjs.org/package/@fnando/email_data)
+[![NPM downloads](https://img.shields.io/gem/dt/%40fnando%2Femail_data.svg?label=NPM%20downloads)](https://npmjs.org/package/@fnando/email_data)
 
 This project is a compilation of datasets related to emails.
 
@@ -20,25 +17,21 @@ This project is a compilation of datasets related to emails.
 The data is compiled from several different sources, so thank you all for making
 this data available.
 
-## Installation
+## Ruby
 
-### Ruby
+### Installation
 
-Add this line to your application's Gemfile:
+```bash
+gem install email_data
+```
+
+Or add the following line to your project's Gemfile:
 
 ```ruby
 gem "email_data"
 ```
 
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install email_data
-
-#### Usage
+### Usage
 
 ```ruby
 require "email_data"
@@ -218,7 +211,9 @@ class LoadEmailData < ActiveRecord::Migration[6.1]
 end
 ```
 
-### Node.js
+## Node.js
+
+### Installation
 
 ```console
 $ yarn add @fnando/email_data
@@ -230,7 +225,7 @@ or
 $ npm install @fnando/email_data
 ```
 
-#### Usage
+### Usage
 
 ```js
 const disposableEmails = require("@fnando/email_data/data/json/disposable_emails.json");
@@ -259,33 +254,27 @@ like to add, please make a pull request against the files `data/manual/*.txt`.
 - `data/manual/private_relays.txt`: list of private relay services, like Apple's
   Hide My Email.
 
-## Development
+## Maintainer
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run
-`rake test` to run the tests. You can also run `bin/console` for an interactive
-prompt that will allow you to experiment.
+- [Nando Vieira](https://github.com/fnando)
 
-To install this gem onto your local machine, run `bundle exec rake install`. To
-release a new version, update the version number in `version.rb`, and then run
-`bundle exec rake release`, which will create a git tag for the version, push
-git commits and tags, and push the `.gem` file to
-[rubygems.org](https://rubygems.org).
+## Contributors
+
+- https://github.com/fnando/email_data/contributors
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at
-https://github.com/fnando/email_data. This project is intended to be a safe,
-welcoming space for collaboration, and contributors are expected to adhere to
-the
-[code of conduct](https://github.com/fnando/email_data/blob/main/CODE_OF_CONDUCT.md).
+For more details about how to contribute, please read
+https://github.com/fnando/email_data/blob/main/CONTRIBUTING.md.
 
 ## License
 
 The gem is available as open source under the terms of the
-[MIT License](https://opensource.org/licenses/MIT).
+[MIT License](https://opensource.org/licenses/MIT). A copy of the license can be
+found at https://github.com/fnando/email_data/blob/main/LICENSE.md.
 
 ## Code of Conduct
 
-Everyone interacting in the EmailData project's codebases, issue trackers, chat
+Everyone interacting in the email_data project's codebases, issue trackers, chat
 rooms and mailing lists is expected to follow the
 [code of conduct](https://github.com/fnando/email_data/blob/main/CODE_OF_CONDUCT.md).

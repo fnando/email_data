@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "active_record"
+
 ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.acronym "TLD"
   inflect.acronym "SLD"

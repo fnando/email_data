@@ -1,11 +1,15 @@
 # frozen_string_literal: true
 
-require "bundler/setup"
+require "simplecov"
+SimpleCov.start
 
-require "minitest/utils"
-require "minitest/autorun"
+require "bundler/setup"
 require "email_data"
 require "email_data/source/active_record"
 
-require_relative "support/tests"
-require_relative "support/active_record"
+require "minitest/utils"
+require "minitest/autorun"
+
+Dir["#{__dir__}/support/**/*.rb"].sort.each do |file|
+  require file
+end
