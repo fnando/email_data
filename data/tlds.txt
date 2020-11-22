@@ -631,7 +631,6 @@ iveco
 jaguar
 java
 jcb
-jcp
 je
 jeep
 jetzt
