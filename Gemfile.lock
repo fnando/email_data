@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    email_data (1606845461)
+    email_data (1606953034)
 
 GEM
   remote: https://rubygems.org/
@@ -41,7 +41,7 @@ GEM
     root_domain (0.1.2)
       email_data
       simpleidn
-    rubocop (1.5.0)
+    rubocop (1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
