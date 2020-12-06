@@ -2,6 +2,8 @@
 
 ./bin/sync-tld
 echo
+./bin/sync-roles
+echo
 ./bin/sync-free-emails
 echo
 ./bin/sync-disposable-emails

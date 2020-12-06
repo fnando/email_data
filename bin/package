@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+PATH="./bin:$PATH"
+
+echo "=> Fetching latest jq"
+wget -O bin/jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+chmod +x bin/jq
+which jq
+jq --version
+
+./bin/sync
+
+echo "=> Updating version files"
+version=$(date "+%s")
+package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
+echo $package_json | jq > package.json
+sed -i -E "s/[0-9]+/$version/" ./lib/email_data/version.rb

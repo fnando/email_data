@@ -2,7 +2,8 @@
 
 require "bundler/gem_tasks"
 require "rake/testtask"
-require "rubocop/rake_task"
+
+all_tasks = %i[test]
 
 Rake::TestTask.new(:test) do |t|
   t.libs << "test"
@@ -10,6 +11,12 @@ Rake::TestTask.new(:test) do |t|
   t.test_files = FileList["test/**/*_test.rb"]
 end
 
-RuboCop::RakeTask.new
+begin
+  require "rubocop/rake_task"
+  RuboCop::RakeTask.new
+  all_tasks << "rubocop"
+rescue LoadError
+  puts "=> Couldn't load Rubocop rake tasks"
+end
 
-task default: %i[test rubocop]
+task default: all_tasks

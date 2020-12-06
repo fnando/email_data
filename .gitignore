@@ -9,3 +9,5 @@
 /data/disposable/**/*
 /data/json/**/*
 LOCK
+/bin/jq
+/vendor
