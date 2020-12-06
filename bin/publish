@@ -8,17 +8,12 @@ source $HOME/.zsh/asdf.sh
 lockfile=$(dirname $0)/../LOCK
 
 if [[ -f "$lockfile" ]]; then
-  terminal-notifier \
-    -message "Skipping script; repository is locked." \
-    -ignoreDnD \
-    -title "email_data" \
-    -group homebrew \
-    &> /dev/null
+  echo "Skipping script; repository is locked."
   exit 1
 fi
 
 git reset --hard
-git checkout main
+git checkout publish
 git pull --rebase
 git push
 
@@ -27,13 +22,8 @@ git push
 git_status=$(git status 2> /dev/null | tr "\\n" " ")
 
 if [[ "$git_status" =~ "nothing to commit" ]]; then
-  terminal-notifier \
-    -message "No changes detected. Skipping new packages." \
-    -ignoreDnD \
-    -title "email_data" \
-    -group homebrew \
-    &> /dev/null
-  exit 1
+  echo "No changes detected. Skipping new packages."
+  exit
 fi
 
 date "+%s" > VERSION
@@ -52,5 +42,5 @@ git add .
 git commit -m "Bump up version."
 git push
 
-./bin/publish-gem
-./bin/publish-npm
+# ./bin/publish-gem
+# ./bin/publish-npm

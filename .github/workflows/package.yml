@@ -1,0 +1,68 @@
+---
+name: package
+
+on:
+  push:
+    branches:
+      - publish
+
+  # schedule:
+  #   - cron: "0 10 * * *"
+
+jobs:
+  build:
+    name: Export with Ruby ${{ matrix.ruby }}
+    runs-on: "ubuntu-latest"
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: ["2.7.x"]
+
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: >
+            ${{ runner.os }}-${{ matrix.ruby }}-gems-${{
+            hashFiles('**/*.gemspec') }}
+          restore-keys: >
+            ${{ runner.os }}-${{ matrix.ruby }}-gems-${{
+            hashFiles('**/*.gemspec') }}
+
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+
+      - name: Install gem dependencies
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+
+      - name: Export files
+        env:
+          GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
+          RUBYGEMS_API_KEY: "${{ secrets.RUBYGEMS_API_KEY }}"
+          NPM_AUTH_TOKEN: "${{ secrets.NPM_AUTH_TOKEN }}"
+        run: |
+          ./bin/package
+          git config user.email "me@fnando.com"
+          git config user.name "Nando Vieira via Github Actions"
+          git add Gemfile.lock
+          git add package.json
+          git add lib/email_data/version.rb
+          git commit --message "Update lists."
+          git pull origin --rebase
+          git push origin --set-upstream
+
+          mkdir -p ~/.gem
+          echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
+          rake release
+
+          echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+          chmod 0600 ~/.npmrc
+          npm publish --access public
