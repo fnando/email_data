@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
 echo "=> Exporting JSON files"
+echo "   Root directory: $(pwd)"
+echo "   Files to be converted:"
+ls -1 ./data/*.txt
+
+mkdir -p data/json
 
 for input in $(ls -1 data/*.txt); do
   name=$(basename $input)
