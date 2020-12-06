@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "helpers"
+
+roles = []
+
+puts "=> Loading roles.txt"
+roles += normalize_list(File.read("#{__dir__}/../data/manual/roles.txt").lines)
+
+puts "=> Normalize roles (count: #{roles.size})"
+roles = roles
+        .uniq
+        .map {|role| role.gsub(/[-@.]/m, "").downcase.strip }
+        .reject(&:empty?)
+        .uniq
+
+puts "=> Saving roles (count: #{roles.size})"
+save_file("roles.txt", normalize_list(roles))

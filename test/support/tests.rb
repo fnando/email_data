@@ -21,6 +21,15 @@ module Tests
         assert_includes EmailData.disposable_domains, "dispostable.com"
       end
 
+      test "returns disposable domains with mx" do
+        assert_includes EmailData.disposable_domains_with_mx, "dispostable.com"
+      end
+
+      test "returns disposable domains without mx" do
+        assert_includes EmailData.disposable_domains_without_mx,
+                        "zyte.site"
+      end
+
       test "returns disposable emails" do
         assert_includes EmailData.disposable_emails,
                         "abdumuhammadalitmp@gmail.com"
