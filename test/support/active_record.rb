@@ -29,12 +29,19 @@ ActiveRecord::Schema.define(version: 0) do
   create.call(:country_tlds)
   create.call(:disposable_emails)
   create.call(:disposable_domains)
+  create.call(:disposable_domains_with_mx)
+  create.call(:disposable_domains_without_mx)
   create.call(:free_email_domains)
   create.call(:roles)
 
   copy = lambda do |table_name|
     values = EmailData::Source::FileSystem.public_send(table_name)
-    model_name = table_name.to_s.singularize.camelize.to_sym
+
+    model_name = EmailData::Source::ActiveRecord.constants.find do |name|
+      klass = EmailData::Source::ActiveRecord.const_get(name)
+      klass.table_name == table_name.to_s
+    end
+
     model_class = EmailData::Source::ActiveRecord.const_get(model_name)
 
     entries = values.map do |value|
@@ -49,6 +56,8 @@ ActiveRecord::Schema.define(version: 0) do
   copy.call(:country_tlds)
   copy.call(:disposable_emails)
   copy.call(:disposable_domains)
+  copy.call(:disposable_domains_with_mx)
+  copy.call(:disposable_domains_without_mx)
   copy.call(:free_email_domains)
   copy.call(:roles)
 end

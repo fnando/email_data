@@ -6,4 +6,6 @@ echo
 echo
 ./bin/sync-disposable-emails
 echo
+./bin/filter-disposable-domains-without-mx
+echo
 ./bin/export-json-files

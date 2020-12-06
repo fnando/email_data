@@ -23,6 +23,16 @@ module EmailData
         @disposable_domains ||= load_file("disposable_domains.txt")
       end
 
+      def self.disposable_domains_with_mx
+        @disposable_domains_with_mx ||=
+          load_file("disposable_domains_with_mx.txt")
+      end
+
+      def self.disposable_domains_without_mx
+        @disposable_domains_without_mx ||=
+          load_file("disposable_domains_without_mx.txt")
+      end
+
       def self.free_email_domains
         @free_email_domains ||= load_file("free_email_domains.txt")
       end

@@ -12,6 +12,8 @@ module EmailData
 
     def_delegators :source,
                    :disposable_domains,
+                   :disposable_domains_with_mx,
+                   :disposable_domains_without_mx,
                    :disposable_emails,
                    :country_tlds,
                    :free_email_domains,

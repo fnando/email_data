@@ -35,6 +35,14 @@ module EmailData
         self.table_name = "disposable_domains"
       end
 
+      class DisposableDomainWithMx < ApplicationRecord
+        self.table_name = "disposable_domains_with_mx"
+      end
+
+      class DisposableDomainWithoutMx < ApplicationRecord
+        self.table_name = "disposable_domains_without_mx"
+      end
+
       class FreeEmailDomain < ApplicationRecord
         self.table_name = "free_email_domains"
       end
@@ -79,6 +87,15 @@ module EmailData
 
       def self.disposable_domains
         @disposable_domains ||= Collection.new(DisposableDomain)
+      end
+
+      def self.disposable_domains_with_mx
+        @disposable_domains_with_mx ||= Collection.new(DisposableDomainWithMx)
+      end
+
+      def self.disposable_domains_without_mx
+        @disposable_domains_without_mx ||=
+          Collection.new(DisposableDomainWithoutMx)
       end
 
       def self.free_email_domains

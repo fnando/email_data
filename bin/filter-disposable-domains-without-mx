@@ -1,0 +1,55 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "helpers"
+require "resolv"
+
+output_path = "#{__dir__}/../data/disposable_domains_without_mx.txt"
+File.unlink(output_path) if File.file?(output_path)
+
+domains = normalize_list(File.read("#{__dir__}/../data/disposable_domains.txt").lines)
+
+def has_mx?(domain)
+  Resolv::DNS.open do |dns|
+    dns.timeouts = 1
+    resources = dns.getresources(domain, Resolv::DNS::Resource::IN::MX)
+    return resources.any?
+  end
+end
+
+started = Time.now.to_i
+
+total = domains.size
+how_many = 150
+processed = 0
+domains_without_mx = []
+
+puts "=> Breaking disposable domains into separate lists"
+
+domains.each_slice(how_many) do |slice|
+  threads = slice.map do |domain|
+    Thread.new do
+      domains_without_mx << domain unless has_mx?(domain)
+    end
+  end
+
+  threads.each(&:join)
+
+  processed += slice.size
+  now = Time.now.to_i
+
+  File.open(output_path, "a") do |file|
+    file << domains_without_mx.join("\n")
+    file << "\n" if domains_without_mx.any?
+  end
+
+  domains_without_mx = []
+  print "\r   Elapsed: #{now - started}s (#{processed} out of #{total} - #{((processed.to_f / total) * 100).round(2)}%)"
+end
+
+domains_without_mx = normalize_list(File.read(output_path).lines)
+domains_with_mx = domains - domains_without_mx
+
+File.open("#{__dir__}/../data/disposable_domains_with_mx.txt", "w") do |file|
+  file << domains_with_mx.join("\n")
+end

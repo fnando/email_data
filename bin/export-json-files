@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo "=> Exporting JSON files"
+
+for input in $(ls -1 data/*.txt); do
+  name=$(basename $input)
+  output=data/json/"${name%.txt}.json"
+  jq -R -s -c 'split("\n")' < $input > $output
+done

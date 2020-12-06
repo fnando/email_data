@@ -41,6 +41,8 @@ EmailData.data_dir
 
 # List of disposable domains. Punycode is expanded into ASCII domains.
 EmailData.disposable_domains
+EmailData.disposable_domains_with_mx
+EmailData.disposable_domains_without_mx
 
 # List of disposable emails. Some services use free email like Gmail to create
 # disposable emails.
@@ -127,6 +129,18 @@ class SetupEmailData < ActiveRecord::Migration[6.1]
 
     add_index :disposable_domains, :name, unique: true
 
+    create_table :disposable_domains_with_mx do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :disposable_domains_with_mx, :name, unique: true
+
+    create_table :disposable_domains_without_mx do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :disposable_domains_without_mx, :name, unique: true
+
     create_table :free_email_domains do |t|
       t.citext :name, null: false
     end
@@ -176,6 +190,8 @@ COPY slds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data
 COPY country_tlds (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/country_tlds.txt';
 COPY disposable_emails (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_emails.txt';
 COPY disposable_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_domains.txt';
+COPY disposable_domains_with_mx (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_domains_with_mx.txt';
+COPY disposable_domains_without_mx (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/disposable_domains_without_mx.txt';
 COPY free_email_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/free_email_domains.txt';
 COPY roles (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/roles.txt';
 COPY private_relays (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/private_relays.txt';
@@ -204,6 +220,8 @@ class LoadEmailData < ActiveRecord::Migration[6.1]
     copy.call(:country_tlds)
     copy.call(:disposable_emails)
     copy.call(:disposable_domains)
+    copy.call(:disposable_domains_with_mx)
+    copy.call(:disposable_domains_without_mx)
     copy.call(:free_email_domains)
     copy.call(:roles)
     copy.call(:private_relays)
@@ -230,6 +248,8 @@ $ npm install @fnando/email_data
 ```js
 const disposableEmails = require("@fnando/email_data/data/json/disposable_emails.json");
 const disposableDomains = require("@fnando/email_data/data/json/disposable_domains.json");
+const disposableDomainsWithMx = require("@fnando/email_data/data/json/disposable_domains_with_mx.json");
+const disposableDomainsWithoutMx = require("@fnando/email_data/data/json/disposable_domains_without_mx.json");
 const freeEmailDomains = require("@fnando/email_data/data/json/free_email_domains.json");
 const roles = require("@fnando/email_data/data/json/roles.json");
 const privateRelays = require("@fnando/email_data/data/json/private_relays.json");
