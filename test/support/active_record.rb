@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 0) do
 
     model_name = EmailData::Source::ActiveRecord.constants.find do |name|
       klass = EmailData::Source::ActiveRecord.const_get(name)
-      klass.table_name == table_name.to_s
+      klass.respond_to?(:table_name) && klass.table_name == table_name.to_s
     end
 
     model_class = EmailData::Source::ActiveRecord.const_get(model_name)
