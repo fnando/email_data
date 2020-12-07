@@ -57,7 +57,7 @@ jobs:
           mkdir -p ~/.gem
           echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
           chmod 0600 ~/.gem/credentials
-          rake release
+          bundle exec rake release
 
           echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
           chmod 0600 ~/.npmrc
