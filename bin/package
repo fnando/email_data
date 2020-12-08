@@ -14,4 +14,43 @@ echo "=> Updating version files"
 version=$(date "+%s")
 package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
 echo $package_json | jq > package.json
-sed -i -E "s/[0-9]+/$version/" ./lib/email_data/version.rb
+sed -i -E "s/[0-9.]+/${version}.0.0/" ./lib/email_data/version.rb
+
+git_status=$(git status 2> /dev/null | tr "\\n" " ")
+
+if [[ "$git_status" =~ "nothing to commit" ]]; then
+  echo "No changes detected. Skipping new packages."
+  exit
+fi
+
+git config user.email "me@fnando.com"
+git config user.name "Nando Vieira via Github Actions"
+git add Gemfile.lock
+git add package.json
+git add lib/email_data/version.rb
+git commit --message "Bump up version (v${version}.0.0)."
+git reset --hard
+git pull origin --rebase
+git push origin --set-upstream
+git tag "v${version}.0.0"
+git push --tags
+
+echo "=> Check repo status"
+git diff
+git diff-index --cached HEAD
+git status
+
+echo "=> Generate gem package"
+mkdir -p ~/.gem
+echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
+chmod 0600 ~/.gem/credentials
+mkdir -p pkg
+rm -rf pkg/*.gem
+email_data_gem=pkg/email_data-$version.gem
+gem build email_data.gemspec --silent --output $email_data_gem
+gem push $email_data_gem
+
+echo "=> Generate npm package"
+echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
+chmod 0600 ~/.npmrc
+npm publish --access public

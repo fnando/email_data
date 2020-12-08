@@ -130,7 +130,7 @@ def process_scraping(element, value_selector)
   else
     element.attributes.each do |_name, attr|
       attr = attr.value.to_s
-      value = attr if attr =~ host_regex
+      value = attr if attr&.match?(host_regex)
     end
   end
 
@@ -172,7 +172,6 @@ threads << thread { domain_scraping("itemp", "https://itemp.email", "select[name
 threads << thread { domain_scraping("cs", "https://www.cs.email", "select[id=gm-host-select] option::text()") }
 threads << thread { domain_scraping("tempmail", "https://tempmail.io/settings/", "select[id=domain] option::text()") }
 threads << thread { domain_scraping("tempemail", "https://tempemail.co", "select[name=email_domain] option::text()") }
-threads << thread { domain_scraping("tmail", "https://mytemp-email.com/", "a.domain-selector::text()") }
 
 threads.each_slice(5) do |slice|
   slice.each(&:join)

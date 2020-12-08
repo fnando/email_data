@@ -106,9 +106,9 @@ def random_timeout
   (1..10).map {|i| (1.0 / i).round(2) }.sample
 end
 
-def refresh_list(url:, path:, verb: :get, params: nil, &block)
+def refresh_list(url:, path:, verb: :get, params: nil)
   response = http_request(verb, url, params)
-  items = block.call(response)
+  items = yield(response)
   append_to_file(path, items)
 rescue StandardError => error
   puts "=> [ERROR] Unable to refresh list: #{url} (#{error.class}: #{error.message})"
@@ -191,9 +191,9 @@ def root_domains(domains)
   processed_domains.reject(&:nil?)
 end
 
-def thread(&block)
+def thread
   Thread.new do
-    block.call
+    yield
   rescue StandardError => error
     puts "=> [ERROR] Thread has errored; #{error.class}: #{error.message}"
   end

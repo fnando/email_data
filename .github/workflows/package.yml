@@ -47,31 +47,3 @@ jobs:
           NPM_AUTH_TOKEN: "${{ secrets.NPM_AUTH_TOKEN }}"
         run: |
           ./bin/package
-
-          git_status=$(git status 2> /dev/null | tr "\\n" " ")
-
-          if [[ "$git_status" =~ "nothing to commit" ]]; then
-            echo "No changes detected. Skipping new packages."
-            exit
-          fi
-
-          git config user.email "me@fnando.com"
-          git config user.name "Nando Vieira via Github Actions"
-          git add Gemfile.lock
-          git add package.json
-          git add lib/email_data/version.rb
-          git commit --message "Update lists."
-          git reset --hard
-          git status --short
-          git pull origin --rebase
-          git push origin --set-upstream
-          git status --short
-
-          mkdir -p ~/.gem
-          echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
-          chmod 0600 ~/.gem/credentials
-          bundle exec rake release
-
-          echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" > ~/.npmrc
-          chmod 0600 ~/.npmrc
-          npm publish --access public
