@@ -11,3 +11,4 @@
 LOCK
 /bin/jq
 /vendor
+/pkg
