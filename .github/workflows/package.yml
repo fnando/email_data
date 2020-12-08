@@ -51,6 +51,7 @@ jobs:
           git add package.json
           git add lib/email_data/version.rb
           git commit --message "Update lists."
+          git reset --hard
           git pull origin --rebase
           git push origin --set-upstream
 
