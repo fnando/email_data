@@ -4,6 +4,8 @@ name: package
 on:
   schedule:
     - cron: "0 0 * * *"
+  repository_dispatch:
+    types: start-workflow
 
 jobs:
   build:
