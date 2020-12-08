@@ -4,8 +4,8 @@ name: package
 on:
   schedule:
     - cron: "0 0 * * *"
-  repository_dispatch:
-    types: start-workflow
+  workflow_dispatch:
+    inputs: {}
 
 jobs:
   build:
@@ -65,6 +65,7 @@ jobs:
           git status --short
           git pull origin --rebase
           git push origin --set-upstream
+          git status --short
 
           mkdir -p ~/.gem
           echo ":rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
