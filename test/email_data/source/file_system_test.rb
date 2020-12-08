@@ -8,7 +8,7 @@ class FileSystemTest < Minitest::Test
   end
 
   test "sets data dir" do
-    assert_equal File.expand_path("../../data", __dir__),
+    assert_equal File.expand_path("../../../data", __dir__),
                  EmailData.data_dir.to_s
   end
 
