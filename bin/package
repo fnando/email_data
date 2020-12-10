@@ -1,18 +1,24 @@
 #!/usr/bin/env bash
 
 PATH="./bin:$PATH"
+os=$(uname)
 
 echo "=> Fetching latest jq"
-wget -O bin/jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+
+if [[ "$os" = "Darwin" ]]; then
+  jq_url=https://github.com/stedolan/jq/releases/download/jq-1.6/jq-osx-amd64
+else
+  jq_url=https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+fi
+
+wget -O bin/jq $jq_url
 chmod +x bin/jq
 which jq
 jq --version
 
 ./bin/sync
 
-git_status=$(git status 2> /dev/null | tr "\\n" " ")
-
-if [[ "$git_status" =~ "nothing to commit" ]]; then
+if `git status | grep -q "nothing to commit"`; then
   echo "No changes detected. Skipping new packages."
   exit
 fi
@@ -21,7 +27,12 @@ echo "=> Updating version files"
 version=$(date "+%s")
 package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
 echo $package_json | jq > package.json
-sed -i -E "s/[0-9.]+/${version}.0.0/" ./lib/email_data/version.rb
+
+if [[ "$os" = "Darwin" ]]; then
+  sed -i "" -E "s/[0-9.]+/${version}.0.0/" ./lib/email_data/version.rb
+else
+  sed -i -E "s/[0-9.]+/${version}.0.0/" ./lib/email_data/version.rb
+fi
 
 git config user.email "me@fnando.com"
 git config user.name "Nando Vieira via Github Actions"
@@ -39,6 +50,10 @@ echo "=> Check repo status"
 git diff
 git diff-index --cached HEAD
 git status
+
+echo "=> SHOULD NOT PUBLISH PACKAGES"
+
+exit
 
 echo "=> Generate gem package"
 mkdir -p ~/.gem
