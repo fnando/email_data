@@ -10,18 +10,18 @@ jq --version
 
 ./bin/sync
 
-echo "=> Updating version files"
-version=$(date "+%s")
-package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
-echo $package_json | jq > package.json
-sed -i -E "s/[0-9.]+/${version}.0.0/" ./lib/email_data/version.rb
-
 git_status=$(git status 2> /dev/null | tr "\\n" " ")
 
 if [[ "$git_status" =~ "nothing to commit" ]]; then
   echo "No changes detected. Skipping new packages."
   exit
 fi
+
+echo "=> Updating version files"
+version=$(date "+%s")
+package_json=$(cat package.json | jq --arg version "${version}.0.0" '.version = $version')
+echo $package_json | jq > package.json
+sed -i -E "s/[0-9.]+/${version}.0.0/" ./lib/email_data/version.rb
 
 git config user.email "me@fnando.com"
 git config user.name "Nando Vieira via Github Actions"
