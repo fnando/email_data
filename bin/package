@@ -8,11 +8,9 @@ chmod +x bin/jq
 which jq
 jq --version
 
-./bin/sync
+# ./bin/sync
 
-git_status=$(git status 2> /dev/null | tr "\\n" " ")
-
-if [[ "$git_status" =~ "nothing to commit" ]]; then
+if `git status | grep -q "nothing to commit"`; then
   echo "No changes detected. Skipping new packages."
   exit
 fi
@@ -39,6 +37,10 @@ echo "=> Check repo status"
 git diff
 git diff-index --cached HEAD
 git status
+
+echo "=> SHOULD NOT PUBLISH PACKAGES"
+
+exit
 
 echo "=> Generate gem package"
 mkdir -p ~/.gem
