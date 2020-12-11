@@ -82,7 +82,7 @@ def gmailnator
     sleep random_timeout
   end
 
-  append_to_file("disposable/gmailnator.txt", emails)
+  emails
 end
 
 def domain_scraping(name, url, selector)
@@ -209,6 +209,7 @@ puts "=> Saving domains (count: #{domains.size})"
 save_file("disposable_domains.txt", domains - ignore_domains)
 
 emails = normalize_list(File.read("#{__dir__}/../data/manual/disposable_emails.txt").lines)
+emails += normalize_list(File.read("#{__dir__}/../data/disposable_emails.txt").lines)
 emails += gmailnator
 puts "=> Saving email proxies (count: #{emails.size})"
 save_file("disposable_emails.txt", emails)
