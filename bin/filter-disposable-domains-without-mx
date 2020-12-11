@@ -9,12 +9,17 @@ File.unlink(output_path) if File.file?(output_path)
 
 domains = normalize_list(File.read("#{__dir__}/../data/disposable_domains.txt").lines)
 
-def has_mx?(domain)
+def has_mx?(domain, remaining_retries = 3)
   Resolv::DNS.open do |dns|
     dns.timeouts = 1
     resources = dns.getresources(domain, Resolv::DNS::Resource::IN::MX)
     return resources.any?
   end
+rescue ResolvTimeout
+  return has_mx?(domain, remaining_retries - 1) if remaining_retries.positive?
+
+  # No MX, after 3 timed out attempts.
+  false
 end
 
 started = Time.now.to_i
