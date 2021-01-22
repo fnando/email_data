@@ -925,6 +925,7 @@ com.vi
 com.vn
 com.vu
 com.ws
+com.ye
 com.zm
 commune.am
 communication.museum
@@ -1199,6 +1200,7 @@ edu.ve
 edu.vn
 edu.vu
 edu.ws
+edu.ye
 edu.za
 edu.zm
 education.museum
@@ -1688,6 +1690,7 @@ gov.vc
 gov.ve
 gov.vn
 gov.ws
+gov.ye
 gov.za
 gov.zm
 gov.zw
@@ -3028,6 +3031,7 @@ mil.tz
 mil.uy
 mil.vc
 mil.ve
+mil.ye
 mil.za
 mil.zm
 mil.zw
@@ -3504,6 +3508,7 @@ net.vi
 net.vn
 net.vu
 net.ws
+net.ye
 net.za
 net.zm
 neues.museum
@@ -3939,6 +3944,7 @@ org.vi
 org.vn
 org.vu
 org.ws
+org.ye
 org.za
 org.zm
 org.zw
