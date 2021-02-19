@@ -448,6 +448,7 @@ biz.ki
 biz.ls
 biz.mv
 biz.mw
+biz.my
 biz.ni
 biz.nr
 biz.pk
