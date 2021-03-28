@@ -459,7 +459,6 @@ frontdoor
 frontier
 ftr
 fujitsu
-fujixerox
 fun
 fund
 furniture
