@@ -22,7 +22,7 @@ module Tests
       end
 
       test "returns disposable domains with mx" do
-        assert_includes EmailData.disposable_domains_with_mx, "dispostable.com"
+        assert_includes EmailData.disposable_domains_with_mx, "fakemail.com"
       end
 
       test "returns disposable domains without mx" do
