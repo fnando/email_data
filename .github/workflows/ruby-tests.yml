@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: ["2.7.x", "2.6.x"]
+        ruby: ["3.0.x", "2.7.x"]
 
     services:
       postgres:
