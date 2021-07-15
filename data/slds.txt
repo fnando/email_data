@@ -218,7 +218,6 @@ ap.gov.pl
 ap.it
 aparecida.br
 app.br
-aprendemas.cl
 aq.it
 aquarium.museum
 aquila.it
@@ -1674,7 +1673,6 @@ gov.sh
 gov.sl
 gov.so
 gov.ss
-gov.st
 gov.sx
 gov.sy
 gov.tj
@@ -2911,6 +2909,7 @@ md.us
 me.it
 me.ke
 me.so
+me.ss
 me.tz
 me.uk
 me.us
@@ -4441,6 +4440,7 @@ sch.ly
 sch.ng
 sch.qa
 sch.sa
+sch.ss
 sch.uk
 sch.zm
 schlesisches.museum
