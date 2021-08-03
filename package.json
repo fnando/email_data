@@ -1,7 +1,7 @@
 {
   "name": "@fnando/email_data",
   "description": "This project is a compilation of datasets related to emails. Includes disposable emails, disposable domains, and free email services.",
-  "version": "1627864571.0.0",
+  "version": "1627951127.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
