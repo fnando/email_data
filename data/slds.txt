@@ -420,6 +420,7 @@ bi.it
 bialowieza.pl
 bialystok.pl
 bib.br
+bib.ve
 bibai.hokkaido.jp
 bible.museum
 biei.hokkaido.jp
@@ -3602,6 +3603,7 @@ nom.pl
 nom.re
 nom.ro
 nom.tm
+nom.ve
 nom.za
 nombre.bo
 nome.pt
@@ -4217,6 +4219,7 @@ rana.no
 randaberg.no
 rankoshi.hokkaido.jp
 ranzan.saitama.jp
+rar.ve
 rauma.no
 ravenna.it
 rawa-maz.pl
