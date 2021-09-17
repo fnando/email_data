@@ -28631,6 +28631,7 @@ cloudns.cf
 cloudns.cl
 cloudns.cx
 cloudns.gq
+cloudns.nz
 cloudonf.com
 cloudoom.com
 cloudosys.com
@@ -103223,6 +103224,7 @@ shenqiancun.com
 shenqimeng.com
 shenshahfood.com
 shenshizhan.com
+shensufu.com
 shep.pw
 shepherds-house.com
 shepherdscrusade.com
