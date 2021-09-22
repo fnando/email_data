@@ -101,7 +101,6 @@ agrar.hu
 agric.za
 agriculture.museum
 agrigento.it
-agrinet.tn
 agro.bo
 agro.pl
 aguni.okinawa.jp
@@ -1016,7 +1015,6 @@ de.us
 deatnu.no
 decorativearts.museum
 def.br
-defense.tn
 delaware.museum
 dell-ogliastra.it
 dellogliastra.it
@@ -1209,7 +1207,6 @@ edu.zm
 education.museum
 educational.museum
 educator.aero
-edunet.tn
 egersund.no
 egyptian.museum
 ehime.jp
@@ -4288,9 +4285,6 @@ rl.no
 rm.it
 rn.gov.br
 rn.it
-rnrt.tn
-rns.tn
-rnu.tn
 ro.gov.br
 ro.it
 roan.no
@@ -5132,7 +5126,6 @@ tt.im
 tur.ar
 tur.br
 turek.pl
-turen.tn
 turin.it
 turystyka.pl
 tuscany.it
