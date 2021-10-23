@@ -17,6 +17,8 @@ require "active_support/all"
 require "root_domain"
 require "email_data"
 
+EXCEPTIONS = File.read("#{__dir__}/../data/manual/exceptions.txt").lines.map(&:chomp)
+
 USER_AGENT = [
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15",
   "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.53 Safari/525.19",
@@ -225,5 +227,5 @@ rescue StandardError => error
 end
 
 def normalize_list(list)
-  list.flatten.map(&:chomp).compact.reject(&:empty?)
+  list.flatten.map(&:chomp).compact.reject(&:empty?) - EXCEPTIONS
 end
