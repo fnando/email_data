@@ -22,7 +22,7 @@ module Tests
       end
 
       test "returns disposable domains with mx" do
-        assert_includes EmailData.disposable_domains_with_mx, "yopmail.com"
+        assert_includes EmailData.disposable_domains_with_mx, "nada.email"
       end
 
       test "returns disposable domains without mx" do
