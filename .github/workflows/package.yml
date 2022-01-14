@@ -17,7 +17,7 @@ jobs:
         ruby: ["2.7.x"]
 
     steps:
-      - uses: actions/checkout@v2.3.5
+      - uses: actions/checkout@v2.4.0
 
       - uses: actions/cache@v2.1.6
         with:
