@@ -299,7 +299,6 @@ crown
 crs
 cruise
 cruises
-csc
 cu
 cuisinella
 cv
