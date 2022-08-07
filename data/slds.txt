@@ -5,7 +5,9 @@
 3.bg
 4.bg
 5.bg
+5g.in
 6.bg
+6g.in
 7.bg
 8.bg
 9.bg
@@ -106,6 +108,7 @@ agro.pl
 aguni.okinawa.jp
 ah.cn
 ah.no
+ai.in
 aibetsu.hokkaido.jp
 aichi.jp
 aid.pl
@@ -162,6 +165,7 @@ altoadige.it
 alvdal.no
 am.br
 am.gov.br
+am.in
 ama.aichi.jp
 ama.shimane.jp
 amagasaki.hyogo.jp
@@ -429,6 +433,7 @@ biella.it
 bieszczady.pl
 bievat.no
 bifuka.hokkaido.jp
+bihar.in
 bihoro.hokkaido.jp
 bilbao.museum
 bill.museum
@@ -444,6 +449,7 @@ biz.cy
 biz.et
 biz.fj
 biz.id
+biz.in
 biz.ki
 biz.ls
 biz.mv
@@ -528,6 +534,7 @@ burghof.museum
 bus.museum
 busan.kr
 bushey.museum
+business.in
 buzen.fukuoka.jp
 bydgoszcz.pl
 bygland.no
@@ -536,6 +543,7 @@ bytom.pl
 bz.it
 c.bg
 c.se
+ca.in
 ca.it
 ca.na
 ca.us
@@ -721,6 +729,7 @@ clinton.museum
 clock.museum
 club.aero
 club.tw
+cn.in
 cn.it
 cn.ua
 cng.br
@@ -849,6 +858,7 @@ com.hn
 com.hr
 com.ht
 com.im
+com.in
 com.io
 com.iq
 com.is
@@ -950,6 +960,7 @@ convent.museum
 coop.ar
 coop.br
 coop.ht
+coop.in
 coop.km
 coop.mv
 coop.mw
@@ -979,6 +990,7 @@ cri.br
 cri.nz
 crimea.ua
 crotone.it
+cs.in
 cs.it
 ct.it
 ct.us
@@ -1017,6 +1029,7 @@ deatnu.no
 decorativearts.museum
 def.br
 delaware.museum
+delhi.in
 dell-ogliastra.it
 dellogliastra.it
 delmenhorst.museum
@@ -1051,6 +1064,7 @@ donostia.museum
 doshi.yamanashi.jp
 dovre.no
 dp.ua
+dr.in
 dr.na
 dr.tr
 drammen.no
@@ -1256,6 +1270,7 @@ environment.museum
 environmentalconservation.museum
 epilepsy.museum
 equipment.aero
+er.in
 erimo.hokkaido.jp
 erotica.hu
 erotika.hu
@@ -1743,6 +1758,7 @@ gu.us
 guam.gu
 gub.uy
 guernsey.museum
+gujarat.in
 gujo.gifu.jp
 gulen.no
 gunma.jp
@@ -2083,6 +2099,7 @@ info.fj
 info.gu
 info.ht
 info.hu
+info.in
 info.ke
 info.ki
 info.la
@@ -2114,6 +2131,7 @@ int.bo
 int.ci
 int.co
 int.cv
+int.in
 int.is
 int.la
 int.lk
@@ -2127,9 +2145,11 @@ int.ve
 int.vn
 intelligence.museum
 interactive.museum
+internet.in
 intl.tn
 inuyama.aichi.jp
 inzai.chiba.jp
+io.in
 ip6.arpa
 iraq.museum
 iris.arpa
@@ -2908,6 +2928,7 @@ mb.it
 mc.it
 md.ci
 md.us
+me.in
 me.it
 me.ke
 me.so
@@ -4068,6 +4089,7 @@ perugia.it
 pesaro-urbino.it
 pesarourbino.it
 pescara.it
+pg.in
 pg.it
 pharmacien.fr
 pharmaciens.km
@@ -4127,6 +4149,7 @@ port.fr
 portal.museum
 portland.museum
 portlligat.museum
+post.in
 posts-and-telecommunications.museum
 potenza.it
 powiat.pl
@@ -4162,6 +4185,7 @@ pro.cy
 pro.ec
 pro.fj
 pro.ht
+pro.in
 pro.mv
 pro.na
 pro.om
@@ -5051,6 +5075,7 @@ tranoy.no
 transport.museum
 transporte.bo
 trapani.it
+travel.in
 travel.pl
 travel.tt
 trd.br
@@ -5136,6 +5161,7 @@ tv.bb
 tv.bo
 tv.br
 tv.im
+tv.in
 tv.it
 tv.na
 tv.sd
@@ -5171,6 +5197,7 @@ uhren.museum
 uji.kyoto.jp
 ujiie.tochigi.jp
 ujitawara.kyoto.jp
+uk.in
 uki.kumamoto.jp
 ukiha.fukuoka.jp
 ullensaker.no
@@ -5194,6 +5221,7 @@ unnan.shimane.jp
 unzen.nagasaki.jp
 uonuma.niigata.jp
 uozu.toyama.jp
+up.in
 upow.gov.pl
 uppo.gov.pl
 urakawa.hokkaido.jp
@@ -5209,6 +5237,7 @@ urn.arpa
 uruma.okinawa.jp
 uryu.hokkaido.jp
 us.gov.pl
+us.in
 us.na
 usa.museum
 usa.oita.jp
