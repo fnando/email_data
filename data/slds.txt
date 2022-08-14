@@ -5460,12 +5460,14 @@ xn--1lqs03n.jp
 xn--1lqs71d.jp
 xn--2m4a15e.jp
 xn--32vp30h.jp
+xn--4dbgdty6c.xn--4dbrk0ce
 xn--4it168d.jp
 xn--4it797k.jp
 xn--4pvxs.jp
 xn--55qx5d.cn
 xn--55qx5d.hk
 xn--55qx5d.xn--j6w193g
+xn--5dbhl8d.xn--4dbrk0ce
 xn--5js045d.jp
 xn--5rtp49c.jp
 xn--5rtq34k.jp
@@ -5473,6 +5475,7 @@ xn--6btw5a.jp
 xn--6orx2r.jp
 xn--7t0a264c.jp
 xn--80au.xn--90a3ac
+xn--8dbq2a.xn--4dbrk0ce
 xn--8ltr62k.jp
 xn--8pvr4u.jp
 xn--90azh.xn--90a3ac
@@ -5546,6 +5549,7 @@ xn--h1aegh.museum
 xn--h3cuzk1di.xn--o3cw4h
 xn--hbmer-xqa.no
 xn--hcesuolo-7ya35b.no
+xn--hebda8b.xn--4dbrk0ce
 xn--hery-ira.nordland.no
 xn--hery-ira.xn--mre-og-romsdal-qqb.no
 xn--hgebostad-g3a.no
