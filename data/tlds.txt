@@ -16,7 +16,6 @@ accountants
 aco
 actor
 ad
-adac
 ads
 adult
 ae
@@ -708,7 +707,6 @@ lilly
 limited
 limo
 lincoln
-linde
 link
 lipsy
 live
@@ -720,7 +718,6 @@ loan
 loans
 locker
 locus
-loft
 lol
 london
 lotte
@@ -740,7 +737,6 @@ luxury
 lv
 ly
 ma
-macys
 madrid
 maif
 maison
@@ -1057,7 +1053,6 @@ seek
 select
 sener
 services
-ses
 seven
 sew
 sex
@@ -1384,7 +1379,6 @@ xn--j1aef
 xn--j1amh
 xn--j6w193g
 xn--jlq480n2rg
-xn--jlq61u9w7b
 xn--jvr189m
 xn--kcrx77d1x4a
 xn--kprw13d
