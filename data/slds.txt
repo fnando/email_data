@@ -3380,6 +3380,7 @@ ohira.tochigi.jp
 ohkura.yamagata.jp
 ohtawara.tochigi.jp
 oi.kanagawa.jp
+oia.gov.pl
 oirase.aomori.jp
 oirm.gov.pl
 oishida.yamagata.jp
@@ -3397,6 +3398,7 @@ okaya.nagano.jp
 okayama.jp
 okayama.okayama.jp
 okazaki.aichi.jp
+oke.gov.pl
 okegawa.saitama.jp
 oketo.hokkaido.jp
 oki.fukuoka.jp
@@ -3442,6 +3444,7 @@ onojo.fukuoka.jp
 onomichi.hiroshima.jp
 ookuwa.nagano.jp
 ooshika.nagano.jp
+oow.gov.pl
 opoczno.pl
 opole.pl
 oppdal.no
@@ -3628,6 +3631,7 @@ osakasayama.osaka.jp
 osaki.miyagi.jp
 osakikamijima.hiroshima.jp
 osasco.br
+oschr.gov.pl
 osen.no
 oseto.nagasaki.jp
 oshima.tokyo.jp
@@ -3772,6 +3776,7 @@ pp.az
 pp.se
 ppg.br
 pr.gov.br
+pr.gov.pl
 pr.it
 pr.us
 prato.it
@@ -4915,6 +4920,7 @@ winb.gov.pl
 wios.gov.pl
 witd.gov.pl
 wiw.gov.pl
+wkz.gov.pl
 wlocl.pl
 wloclawek.pl
 wodzislaw.pl
@@ -4925,6 +4931,7 @@ wroclaw.pl
 ws.na
 wsa.gov.pl
 wskr.gov.pl
+wsse.gov.pl
 wuoz.gov.pl
 wv.us
 www.ck
@@ -5342,5 +5349,6 @@ zj.cn
 zlg.br
 zp.gov.pl
 zp.ua
+zpisdn.gov.pl
 zt.ua
 zushi.kanagawa.jp
