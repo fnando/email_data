@@ -275,7 +275,6 @@ consulting
 contact
 contractors
 cooking
-cookingchannel
 cool
 coop
 corsica
@@ -432,7 +431,6 @@ fm
 fo
 foo
 food
-foodnetwork
 football
 ford
 forex
@@ -538,7 +536,6 @@ help
 helsinki
 here
 hermes
-hgtv
 hiphop
 hisamitsu
 hitachi
@@ -1194,7 +1191,6 @@ trade
 trading
 training
 travel
-travelchannel
 travelers
 travelersinsurance
 trust

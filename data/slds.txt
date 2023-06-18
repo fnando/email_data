@@ -109,6 +109,7 @@ aguni.okinawa.jp
 ah.cn
 ah.no
 ai.in
+ai.vn
 aibetsu.hokkaido.jp
 aichi.jp
 aid.pl
@@ -186,6 +187,7 @@ andria-barletta-trani.it
 andria-trani-barletta.it
 andriabarlettatrani.it
 andriatranibarletta.it
+angiang.vn
 anjo.aichi.jp
 ann-arbor.mi.us
 annaka.gunma.jp
@@ -316,6 +318,10 @@ b.se
 ba.gov.br
 ba.it
 babia-gora.pl
+bacgiang.vn
+backan.vn
+baclieu.vn
+bacninh.vn
 badaddja.no
 bahcavuotna.no
 bahccavuotna.no
@@ -335,6 +341,7 @@ bando.ibaraki.jp
 bar.pro
 bardu.no
 bari.it
+baria-vungtau.vn
 barletta-trani-andria.it
 barlettatraniandria.it
 barueri.br
@@ -355,6 +362,7 @@ belau.pw
 belem.br
 belluno.it
 benevento.it
+bentre.vn
 beppu.oita.jp
 berg.no
 bergamo.it
@@ -379,6 +387,10 @@ bifuka.hokkaido.jp
 bihar.in
 bihoro.hokkaido.jp
 bindal.no
+binhdinh.vn
+binhduong.vn
+binhphuoc.vn
+binhthuan.vn
 bio.br
 biratori.hokkaido.jp
 birkenes.no
@@ -473,12 +485,15 @@ cal.it
 calabria.it
 caltanissetta.it
 cam.it
+camau.vn
 campania.it
 campidano-medio.it
 campidanomedio.it
 campinagrande.br
 campinas.br
 campobasso.it
+cantho.vn
+caobang.vn
 carbonia-iglesias.it
 carboniaiglesias.it
 cargo.aero
@@ -873,6 +888,9 @@ daigo.ibaraki.jp
 daisen.akita.jp
 daito.osaka.jp
 daiwa.hiroshima.jp
+daklak.vn
+daknong.vn
+danang.vn
 date.fukushima.jp
 date.hokkaido.jp
 davvenjarga.no
@@ -896,6 +914,7 @@ dev.br
 df.gov.br
 dgca.aero
 dielddanuorri.no
+dienbien.vn
 divtasvuodna.no
 divttasvuotna.no
 dlugoleka.pl
@@ -904,6 +923,8 @@ dnepropetrovsk.ua
 dni.us
 dnipropetrovsk.ua
 donetsk.ua
+dongnai.vn
+dongthap.vn
 donna.no
 doshi.yamanashi.jp
 dovre.no
@@ -1299,6 +1320,7 @@ genova.it
 geo.br
 geometre-expert.fr
 ggf.br
+gialai.vn
 giehtavuoatna.no
 gifu.gifu.jp
 gifu.jp
@@ -1574,7 +1596,10 @@ haebaru.okinawa.jp
 haga.tochigi.jp
 hagebostad.no
 hagi.yamaguchi.jp
+hagiang.vn
 haibara.shizuoka.jp
+haiduong.vn
+haiphong.vn
 hakata.fukuoka.jp
 hakodate.hokkaido.jp
 hakone.kanagawa.jp
@@ -1592,6 +1617,7 @@ hamatonbetsu.hokkaido.jp
 hammarfeasta.no
 hammerfest.no
 hamura.tokyo.jp
+hanam.vn
 hanamaki.iwate.jp
 hanamigawa.chiba.jp
 hanawa.fukushima.jp
@@ -1599,6 +1625,7 @@ handa.aichi.jp
 hanggliding.aero
 hannan.osaka.jp
 hanno.saitama.jp
+hanoi.vn
 hanyu.saitama.jp
 hapmir.no
 happou.akita.jp
@@ -1614,11 +1641,13 @@ hashima.gifu.jp
 hashimoto.wakayama.jp
 hasuda.saitama.jp
 hasvik.no
+hatinh.vn
 hatogaya.saitama.jp
 hatoyama.saitama.jp
 hatsukaichi.hiroshima.jp
 hattfjelldal.no
 haugesund.no
+haugiang.vn
 hayakawa.yamanashi.jp
 hayashima.okayama.jp
 hazu.aichi.jp
@@ -1712,6 +1741,7 @@ hl.cn
 hl.no
 hm.no
 hn.cn
+hoabinh.vn
 hobol.no
 hof.no
 hofu.yamaguchi.jp
@@ -1743,6 +1773,7 @@ hoyanger.no
 hoylandet.no
 hs.kr
 huissier-justice.fr
+hungyen.vn
 hurdal.no
 hurum.no
 hvaler.no
@@ -1776,6 +1807,7 @@ id.ir
 id.lv
 id.ly
 id.us
+id.vn
 ide.kyoto.jp
 idf.il
 idrett.no
@@ -1905,6 +1937,7 @@ intl.tn
 inuyama.aichi.jp
 inzai.chiba.jp
 io.in
+io.vn
 ip6.arpa
 iris.arpa
 iruma.saitama.jp
@@ -2209,6 +2242,7 @@ kepno.pl
 ketrzyn.pl
 kg.kr
 kh.ua
+khanhhoa.vn
 kharkiv.ua
 kharkov.ua
 kherson.ua
@@ -2216,6 +2250,7 @@ khmelnitskiy.ua
 khmelnytskyi.ua
 kibichuo.okayama.jp
 kids.us
+kiengiang.vn
 kiev.ua
 kiho.mie.jp
 kihoku.ehime.jp
@@ -2306,6 +2341,7 @@ kongsvinger.no
 konin.pl
 konskowola.pl
 konsulat.gov.pl
+kontum.vn
 konyvelo.hu
 koori.fukushima.jp
 kopervik.no
@@ -2417,9 +2453,13 @@ la-spezia.it
 la.us
 laakesvuemie.no
 lahppi.no
+laichau.vn
 lakas.hu
+lamdong.vn
 lanbib.se
 langevag.no
+langson.vn
+laocai.vn
 lapy.pl
 laquila.it
 lardal.no
@@ -2534,6 +2574,7 @@ lombardia.it
 lombardy.it
 lomza.pl
 londrina.br
+longan.vn
 loppa.no
 lorenskog.no
 loten.no
@@ -2980,6 +3021,7 @@ nakayama.yamagata.jp
 nakijin.okinawa.jp
 naklo.pl
 namdalseid.no
+namdinh.vn
 name.az
 name.eg
 name.et
@@ -3198,6 +3240,7 @@ net.zm
 news.hu
 neyagawa.osaka.jp
 nf.ca
+nghean.vn
 ngo.lk
 ngo.ph
 ngo.za
@@ -3219,6 +3262,8 @@ nikaho.akita.jp
 niki.hokkaido.jp
 nikko.tochigi.jp
 nikolaev.ua
+ninhbinh.vn
+ninhthuan.vn
 ninohe.iwate.jp
 ninomiya.kanagawa.jp
 nirasaki.yamanashi.jp
@@ -3728,6 +3773,8 @@ pg.in
 pg.it
 pharmacien.fr
 pharmaciens.km
+phutho.vn
+phuyen.vn
 pi.gov.br
 pi.it
 piacenza.it
@@ -3840,6 +3887,11 @@ qld.au
 qld.edu.au
 qld.gov.au
 qsl.br
+quangbinh.vn
+quangnam.vn
+quangngai.vn
+quangninh.vn
+quangtri.vn
 r.bg
 r.se
 ra.it
@@ -4252,6 +4304,7 @@ so.it
 sobetsu.hokkaido.jp
 soc.dz
 soc.lk
+soctrang.vn
 sodegaura.chiba.jp
 soeda.fukuoka.jp
 software.aero
@@ -4268,6 +4321,7 @@ sondre-land.no
 sondrio.it
 songdalen.no
 soni.nara.jp
+sonla.vn
 soo.kagoshima.jp
 sor-aurdal.no
 sor-fron.no
@@ -4457,6 +4511,7 @@ tatsuno.hyogo.jp
 tatsuno.nagano.jp
 tawaramoto.nara.jp
 taxi.br
+tayninh.vn
 tc.br
 te.it
 te.ua
@@ -4478,7 +4533,13 @@ ternopil.ua
 teshikaga.hokkaido.jp
 test.tj
 tgory.pl
+thaibinh.vn
+thainguyen.vn
+thanhhoa.vn
+thanhphohochiminh.vn
 the.br
+thuathienhue.vn
+tiengiang.vn
 time.no
 tingvoll.no
 tinn.no
@@ -4608,6 +4669,7 @@ trapani.it
 travel.in
 travel.pl
 travel.tt
+travinh.vn
 trd.br
 trentin-sud-tirol.it
 trentin-sudtirol.it
@@ -4683,6 +4745,7 @@ turek.pl
 turin.it
 turystyka.pl
 tuscany.it
+tuyenquang.vn
 tv.bb
 tv.bo
 tv.br
@@ -4853,6 +4916,8 @@ video.hu
 vik.no
 vikna.no
 vindafjord.no
+vinhlong.vn
+vinhphuc.vn
 vinnica.ua
 vinnytsia.ua
 viterbo.it
@@ -5288,6 +5353,7 @@ yawara.ibaraki.jp
 yawata.kyoto.jp
 yawatahama.ehime.jp
 yazu.tottori.jp
+yenbai.vn
 yk.ca
 yn.cn
 yoichi.hokkaido.jp
