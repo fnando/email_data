@@ -557,7 +557,6 @@ hospital
 host
 hosting
 hot
-hoteles
 hotels
 hotmail
 house
@@ -889,7 +888,6 @@ pars
 partners
 parts
 party
-passagens
 pay
 pccw
 pe
@@ -1252,7 +1250,6 @@ voting
 voto
 voyage
 vu
-vuelos
 wales
 walmart
 walter
