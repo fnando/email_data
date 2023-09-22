@@ -197,7 +197,7 @@ COPY roles (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_dat
 COPY private_relays (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/private_relays.txt';
 ```
 
-Alternatively, you could create a migrate that executes that same command; given
+Alternatively, you could create a migration that executes that same command; given
 that you'd be running Ruby code, you can replace the steps to find the gem path
 with `EmailData.data_dir`.
 
