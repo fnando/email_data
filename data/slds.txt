@@ -2045,7 +2045,6 @@ k12.ca.us
 k12.co.us
 k12.ct.us
 k12.dc.us
-k12.de.us
 k12.ec
 k12.fl.us
 k12.ga.us
