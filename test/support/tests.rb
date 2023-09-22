@@ -41,9 +41,9 @@ module Tests
 
       test "ensures free email services aren't marked as disposable" do
         EmailData.free_email_domains.each do |domain|
-          refute EmailData.disposable_domains.include?(domain),
-                 "expected #{domain} not to be marked as a " \
-                 "disposable domain"
+          refute_includes EmailData.disposable_domains, domain,
+                          "expected #{domain} not to be marked as a " \
+                          "disposable domain"
         end
       end
 

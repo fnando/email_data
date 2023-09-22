@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "./lib/email_data/version"
+require_relative "lib/email_data/version"
 
 Gem::Specification.new do |spec|
   spec.name    = "email_data"
