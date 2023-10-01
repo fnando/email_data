@@ -89,7 +89,6 @@ aero.tt
 aerobatic.aero
 aeroclub.aero
 aerodrome.aero
-aeroport.fr
 afjord.no
 africa.bj
 ag.it
@@ -301,7 +300,6 @@ av.it
 av.tr
 avellino.it
 averoy.no
-avocat.fr
 avocat.pro
 avocats.bj
 avoues.fr
@@ -570,7 +568,6 @@ certification.aero
 cesena-forli.it
 cesenaforli.it
 ch.it
-chambagri.fr
 championship.aero
 charter.aero
 cherkassy.ua
@@ -595,7 +592,6 @@ chikushino.fukuoka.jp
 chikuzen.fukuoka.jp
 chino.nagano.jp
 chippubetsu.hokkaido.jp
-chirurgiens-dentistes.fr
 chiryu.aichi.jp
 chita.aichi.jp
 chitose.hokkaido.jp
@@ -1143,7 +1139,6 @@ evenassi.no
 evenes.no
 evje-og-hornnes.no
 exchange.aero
-experts-comptables.fr
 express.aero
 f.bg
 f.se
@@ -1318,7 +1313,6 @@ genkai.saga.jp
 genoa.it
 genova.it
 geo.br
-geometre-expert.fr
 ggf.br
 gialai.vn
 giehtavuoatna.no
@@ -2688,7 +2682,6 @@ med.pa
 med.pro
 med.sa
 med.sd
-medecin.fr
 medecin.km
 media.aero
 media.hu
@@ -3341,7 +3334,6 @@ nose.osaka.jp
 nosegawa.nara.jp
 noshiro.akita.jp
 not.br
-notaires.fr
 notaires.km
 noticias.bo
 noto.ishikawa.jp
@@ -3770,7 +3762,6 @@ pesarourbino.it
 pescara.it
 pg.in
 pg.it
-pharmacien.fr
 pharmaciens.km
 phutho.vn
 phuyen.vn
@@ -3814,7 +3805,6 @@ pordenone.it
 porsanger.no
 porsangu.no
 porsgrunn.no
-port.fr
 post.in
 potenza.it
 powiat.pl
@@ -4898,7 +4888,6 @@ vestre-slidre.no
 vestre-toten.no
 vestvagoy.no
 vet.br
-veterinaire.fr
 veterinaire.km
 vevelstad.no
 vf.no
