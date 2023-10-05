@@ -2584,6 +2584,7 @@ lubin.pl
 lucania.it
 lucca.it
 lugansk.ua
+luhansk.ua
 lukow.pl
 lund.no
 lunner.no
@@ -4830,6 +4831,7 @@ uw.gov.pl
 uwajima.ehime.jp
 uz.ua
 uzhgorod.ua
+uzhhorod.ua
 uzs.gov.pl
 v.bg
 va.it
@@ -5388,6 +5390,7 @@ z.bg
 z.se
 zachpomor.pl
 zagan.pl
+zakarpattia.ua
 zama.kanagawa.jp
 zamami.okinawa.jp
 zao.miyagi.jp
