@@ -4,6 +4,8 @@
 echo
 ./bin/sync-roles
 echo
+./bin/sync-dnsbls
+echo
 ./bin/sync-free-emails
 echo
 ./bin/sync-disposable-emails

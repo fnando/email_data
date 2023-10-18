@@ -65,6 +65,9 @@ EmailData.tlds
 
 # List of second-level domains.
 EmailData.slds
+
+# A list of DNSBL providers.
+EmailData.dnsbls
 ```
 
 #### Data sources
@@ -158,6 +161,12 @@ class SetupEmailData < ActiveRecord::Migration[6.1]
     end
 
     add_index :private_relays, :name, unique: true
+
+    create_table :dnsbls do |t|
+      t.citext :name, null: false
+    end
+
+    add_index :dnsbls, :name, unique: true
   end
 end
 ```
@@ -195,11 +204,12 @@ COPY disposable_domains_without_mx (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/g
 COPY free_email_domains (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/free_email_domains.txt';
 COPY roles (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/roles.txt';
 COPY private_relays (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/private_relays.txt';
+COPY dnsbls (name) FROM '/usr/local/ruby/2.7.1/lib/ruby/gems/2.7.0/gems/email_data-1601479967/data/dnsbls.txt';
 ```
 
-Alternatively, you could create a migration that executes that same command; given
-that you'd be running Ruby code, you can replace the steps to find the gem path
-with `EmailData.data_dir`.
+Alternatively, you could create a migration that executes that same command;
+given that you'd be running Ruby code, you can replace the steps to find the gem
+path with `EmailData.data_dir`.
 
 ```ruby
 class LoadEmailData < ActiveRecord::Migration[6.1]
@@ -225,6 +235,7 @@ class LoadEmailData < ActiveRecord::Migration[6.1]
     copy.call(:free_email_domains)
     copy.call(:roles)
     copy.call(:private_relays)
+    copy.call(:dnsbls)
   end
 end
 ```
@@ -256,6 +267,7 @@ const privateRelays = require("@fnando/email_data/data/json/private_relays.json"
 const tlds = require("@fnando/email_data/data/json/tlds.json");
 const slds = require("@fnando/email_data/data/json/slds.json");
 const cctlds = require("@fnando/email_data/data/json/country_tlds.json");
+const dnsbls = require("@fnando/email_data/data/json/dnsbls.json");
 ```
 
 ## Dataset

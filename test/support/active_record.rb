@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 0) do
   create.call(:disposable_domains_without_mx)
   create.call(:free_email_domains)
   create.call(:roles)
+  create.call(:dnsbls)
+  create.call(:private_relays)
 
   copy = lambda do |table_name|
     values = EmailData::Source::FileSystem.public_send(table_name)
@@ -60,4 +62,6 @@ ActiveRecord::Schema.define(version: 0) do
   copy.call(:disposable_domains_without_mx)
   copy.call(:free_email_domains)
   copy.call(:roles)
+  copy.call(:dnsbls)
+  copy.call(:private_relays)
 end

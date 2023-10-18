@@ -50,6 +50,14 @@ module Tests
       test "returns roles" do
         assert_includes EmailData.roles, "info"
       end
+
+      test "returns private relays" do
+        assert_includes EmailData.private_relays, "mozmail.com"
+      end
+
+      test "returns dnsbls" do
+        assert_includes EmailData.dnsbls, "zen.spamhaus.org"
+      end
     end
   end
 end

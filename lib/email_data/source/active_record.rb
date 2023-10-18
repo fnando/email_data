@@ -55,6 +55,10 @@ module EmailData
         self.table_name = "private_relays"
       end
 
+      class DNSBL < ApplicationRecord
+        self.table_name = "dnsbls"
+      end
+
       class Collection
         def initialize(model)
           @model = model
@@ -108,6 +112,10 @@ module EmailData
 
       def self.private_relays
         @private_relays ||= Collection.new(PrivateRelay)
+      end
+
+      def self.dnsbls
+        @dnsbls ||= Collection.new(DNSBL)
       end
     end
   end

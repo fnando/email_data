@@ -45,6 +45,10 @@ module EmailData
         @private_relays ||= load_file("private_relays.txt")
       end
 
+      def self.dnsbls
+        @dnsbls ||= load_file("dnsbls.txt")
+      end
+
       def self.load_file(filename)
         EmailData
           .data_dir

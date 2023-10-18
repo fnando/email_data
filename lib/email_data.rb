@@ -20,7 +20,8 @@ module EmailData
                    :private_relays,
                    :tlds,
                    :slds,
-                   :roles
+                   :roles,
+                   :dnsbls
   end
 
   def self.source=(source)
