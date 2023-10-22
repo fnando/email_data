@@ -241,7 +241,6 @@ citadel
 citi
 citic
 city
-cityeats
 ck
 cl
 claims
@@ -443,7 +442,6 @@ free
 fresenius
 frl
 frogans
-frontdoor
 frontier
 ftr
 fujitsu
