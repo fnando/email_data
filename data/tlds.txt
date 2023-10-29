@@ -212,7 +212,6 @@ catholic
 cba
 cbn
 cbre
-cbs
 cc
 cd
 center
@@ -1057,7 +1056,6 @@ shop
 shopping
 shouji
 show
-showtime
 si
 silk
 sina
