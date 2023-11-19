@@ -378,7 +378,6 @@ es
 esq
 estate
 et
-etisalat
 eu
 eurovision
 eus
@@ -1369,7 +1368,6 @@ xn--mgb9awbf
 xn--mgba3a3ejt
 xn--mgba3a4f16a
 xn--mgba7c0bbn0a
-xn--mgbaakc7dvf
 xn--mgbaam7a8h
 xn--mgbab2bd
 xn--mgbah1a3hjkrd
