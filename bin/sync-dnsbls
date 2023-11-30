@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "helpers"
+
+dnsbls = []
+
+puts "=> Loading dnsbls.txt"
+dnsbls += normalize_list(File.read("#{__dir__}/../data/manual/dnsbls.txt").lines)
+
+puts "=> Normalize dnsbls (count: #{dnsbls.size})"
+dnsbls = dnsbls
+         .uniq
+         .map {|dnsbl| dnsbl.downcase.strip }
+         .reject(&:empty?)
+         .uniq
+
+puts "=> Saving dnsbls (count: #{dnsbls.size})"
+save_file("dnsbls.txt", normalize_list(dnsbls))
