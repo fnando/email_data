@@ -138,6 +138,7 @@ threads << thread { load_github_url("https://raw.githubusercontent.com/maxmalysh
 threads << thread { load_github_url("https://raw.githubusercontent.com/jespernissen/disposable-maildomain-list/master/disposable-maildomain-list.txt") }
 threads << thread { load_github_url("https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt") }
 threads << thread { load_github_url("https://gist.github.com/fnando/dafe542cac13f831bbf5521a55248116/raw/disposable.txt") }
+threads << thread { load_github_url("https://raw.githubusercontent.com/bitbar/disposable-email-domains/master/domains.txt") }
 threads << thread { temp_mail_address }
 threads << thread { tempmail_io }
 threads << thread { moakt }
