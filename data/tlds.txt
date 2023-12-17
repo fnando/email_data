@@ -1015,7 +1015,6 @@ sb
 sbi
 sbs
 sc
-sca
 scb
 schaeffler
 schmidt
