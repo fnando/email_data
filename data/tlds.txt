@@ -259,7 +259,6 @@ coffee
 college
 cologne
 com
-comcast
 commbank
 community
 company
@@ -1273,7 +1272,6 @@ wtc
 wtf
 xbox
 xerox
-xfinity
 xihuan
 xin
 xn--11b4c3d
