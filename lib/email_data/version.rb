@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module EmailData
-  VERSION = "1714868851.0.0"
+  VERSION = "1715473663.0.0"
 end
