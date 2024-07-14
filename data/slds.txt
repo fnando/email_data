@@ -171,7 +171,6 @@ ambulance.aero
 ami.ibaraki.jp
 amli.no
 amot.no
-amusement.aero
 an.it
 anamizu.ishikawa.jp
 anan.nagano.jp
@@ -1211,6 +1210,7 @@ fr.it
 frana.no
 fredrikstad.no
 frei.no
+freight.aero
 friuli-v-giulia.it
 friuli-ve-giulia.it
 friuli-vegiulia.it
@@ -2627,6 +2627,7 @@ mar.it
 marche.it
 maringa.br
 marker.no
+marketplace.aero
 marnardal.no
 marugame.kagawa.jp
 marumori.miyagi.jp
@@ -4500,6 +4501,7 @@ tateyama.toyama.jp
 tatsuno.hyogo.jp
 tatsuno.nagano.jp
 tawaramoto.nara.jp
+taxi.aero
 taxi.br
 tayninh.vn
 tc.br
