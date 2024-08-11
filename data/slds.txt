@@ -55,6 +55,7 @@ ac.mz
 ac.ni
 ac.nz
 ac.pa
+ac.pk
 ac.pr
 ac.rs
 ac.rw
@@ -1328,6 +1329,7 @@ gjerdrum.no
 gjerstad.no
 gjesdal.no
 gjovik.no
+gkp.pk
 gliding.aero
 glogow.pl
 gloppen.no
@@ -1363,6 +1365,7 @@ gob.sv
 gob.ve
 gobo.wakayama.jp
 godo.gifu.jp
+gog.pk
 goiania.br
 gojome.akita.jp
 gok.pk
@@ -1892,7 +1895,6 @@ info.na
 info.nf
 info.ni
 info.nr
-info.pk
 info.pl
 info.pr
 info.ro
