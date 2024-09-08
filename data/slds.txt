@@ -1351,6 +1351,7 @@ go.ug
 gob.ar
 gob.bo
 gob.cl
+gob.cu
 gob.do
 gob.ec
 gob.es
@@ -3069,6 +3070,7 @@ narviika.no
 narvik.no
 nasu.tochigi.jp
 nasushiobara.tochigi.jp
+nat.cu
 nat.tn
 natal.br
 natori.miyagi.jp
