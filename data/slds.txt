@@ -368,6 +368,7 @@ bergen.no
 berlevag.no
 beskidy.pl
 bet.ar
+bet.br
 bg.it
 bhz.br
 bi.it
@@ -2479,6 +2480,7 @@ lecco.it
 leg.br
 legnica.pl
 leikanger.no
+leilao.br
 leirfjord.no
 leirvik.no
 leka.no
