@@ -86,7 +86,6 @@ adv.br
 adv.mz
 aejrie.no
 aero.mv
-aero.tt
 aerobatic.aero
 aeroclub.aero
 aerodrome.aero
@@ -100,6 +99,7 @@ agematsu.nagano.jp
 agents.aero
 agr.br
 agrar.hu
+agri.jo
 agric.za
 agrigento.it
 agro.bj
@@ -109,6 +109,7 @@ aguni.okinawa.jp
 ah.cn
 ah.no
 ai.in
+ai.jo
 ai.vn
 aibetsu.hokkaido.jp
 aichi.jp
@@ -232,7 +233,6 @@ art.dz
 art.ht
 art.sn
 arte.bo
-arts.co
 arts.nf
 arts.ro
 arts.ve
@@ -647,6 +647,7 @@ co.ci
 co.cl
 co.cm
 co.cr
+co.dm
 co.gg
 co.gl
 co.gy
@@ -756,7 +757,6 @@ com.im
 com.in
 com.io
 com.iq
-com.is
 com.jo
 com.kg
 com.ki
@@ -853,7 +853,6 @@ coop.mv
 coop.mw
 coop.py
 coop.rw
-coop.tt
 cooperativa.bo
 cosenza.it
 council.aero
@@ -1008,7 +1007,6 @@ edu.ht
 edu.in
 edu.io
 edu.iq
-edu.is
 edu.it
 edu.jo
 edu.kg
@@ -1113,6 +1111,7 @@ ena.gifu.jp
 enebakk.no
 enf.br
 eng.br
+eng.jo
 eng.pro
 engerdal.no
 engine.aero
@@ -1173,7 +1172,6 @@ fin.ec
 fin.tn
 finnoy.no
 firenze.it
-firm.co
 firm.ht
 firm.in
 firm.nf
@@ -1197,6 +1195,7 @@ floripa.br
 floro.no
 fm.br
 fm.it
+fm.jo
 fm.no
 fnd.br
 foggia.it
@@ -1444,7 +1443,6 @@ gov.in
 gov.io
 gov.iq
 gov.ir
-gov.is
 gov.it
 gov.jo
 gov.kg
@@ -1880,12 +1878,10 @@ ine.kyoto.jp
 inf.br
 inf.cu
 inf.mk
-info.au
 info.az
 info.bb
 info.bj
 info.bo
-info.co
 info.ec
 info.et
 info.fj
@@ -1920,10 +1916,8 @@ int.ar
 int.az
 int.bo
 int.ci
-int.co
 int.cv
 int.in
-int.is
 int.la
 int.lk
 int.mv
@@ -1931,7 +1925,6 @@ int.mw
 int.ni
 int.pt
 int.tj
-int.tt
 int.ve
 int.vn
 internet.in
@@ -2019,7 +2012,6 @@ jgora.pl
 jinsekikogen.hiroshima.jp
 jl.cn
 joboji.iwate.jp
-jobs.tt
 joetsu.niigata.jp
 jogasz.hu
 johana.toyama.jp
@@ -2753,7 +2745,6 @@ mil.do
 mil.ec
 mil.eg
 mil.fj
-mil.ge
 mil.gh
 mil.gt
 mil.hn
@@ -2788,6 +2779,7 @@ mil.tj
 mil.tm
 mil.to
 mil.tr
+mil.tt
 mil.tw
 mil.tz
 mil.uy
@@ -2888,7 +2880,6 @@ mobara.chiba.jp
 mobi.gp
 mobi.ke
 mobi.ng
-mobi.tt
 mobi.tz
 mochizuki.nagano.jp
 mod.gi
@@ -2957,7 +2948,6 @@ musashino.tokyo.jp
 museum.mv
 museum.no
 museum.om
-museum.tt
 musica.ar
 musica.bo
 mutsu.aomori.jp
@@ -3027,7 +3017,6 @@ name.eg
 name.et
 name.fj
 name.hr
-name.jo
 name.mk
 name.mv
 name.my
@@ -3157,7 +3146,6 @@ net.in
 net.io
 net.iq
 net.ir
-net.is
 net.je
 net.jo
 net.kg
@@ -3308,7 +3296,6 @@ noda.iwate.jp
 nogata.fukuoka.jp
 nogi.tochigi.jp
 noheji.aomori.jp
-nom.ad
 nom.ag
 nom.br
 nom.co
@@ -3322,7 +3309,6 @@ nom.ni
 nom.pa
 nom.pe
 nom.pl
-nom.re
 nom.ro
 nom.tm
 nom.ve
@@ -3573,7 +3559,6 @@ org.in
 org.io
 org.iq
 org.ir
-org.is
 org.je
 org.jo
 org.kg
@@ -3761,9 +3746,9 @@ pe.ca
 pe.gov.br
 pe.it
 pe.kr
+per.jo
 per.la
 per.nf
-per.sg
 perso.ht
 perso.sn
 perso.tn
@@ -3774,6 +3759,7 @@ pescara.it
 pg.in
 pg.it
 pharmaciens.km
+phd.jo
 phutho.vn
 phuyen.vn
 pi.gov.br
@@ -3917,7 +3903,6 @@ re.kr
 realestate.pl
 rebun.hokkaido.jp
 rec.br
-rec.co
 rec.nf
 rec.ro
 rec.ve
@@ -4114,6 +4099,7 @@ sch.sa
 sch.ss
 sch.uk
 sch.zm
+school.ge
 school.nz
 school.za
 schools.nsw.edu.au
@@ -4551,7 +4537,6 @@ tm.fr
 tm.hu
 tm.km
 tm.mc
-tm.mg
 tm.no
 tm.pl
 tm.ro
@@ -4666,7 +4651,6 @@ transporte.bo
 trapani.it
 travel.in
 travel.pl
-travel.tt
 travinh.vn
 trd.br
 trentin-sud-tirol.it
@@ -4750,6 +4734,7 @@ tv.br
 tv.im
 tv.in
 tv.it
+tv.jo
 tv.sd
 tv.tr
 tv.tz
@@ -4958,7 +4943,6 @@ watari.miyagi.jp
 waw.pl
 wazuka.kyoto.jp
 web.bo
-web.co
 web.do
 web.gu
 web.id
