@@ -34,6 +34,7 @@ ac.ci
 ac.cn
 ac.cr
 ac.cy
+ac.eg
 ac.fj
 ac.gn
 ac.gov.br
@@ -1806,6 +1807,7 @@ ichinomiya.aichi.jp
 ichinomiya.chiba.jp
 ichinoseki.iwate.jp
 id.au
+id.cv
 id.ir
 id.lv
 id.ly
@@ -1883,6 +1885,7 @@ info.bb
 info.bj
 info.bo
 info.ec
+info.eg
 info.et
 info.fj
 info.gu
@@ -2666,6 +2669,7 @@ mb.ca
 mb.it
 mc.it
 md.us
+me.eg
 me.in
 me.it
 me.ke
@@ -3117,6 +3121,7 @@ net.cm
 net.cn
 net.co
 net.cu
+net.cv
 net.cw
 net.cy
 net.dm
@@ -3853,6 +3858,7 @@ psse.gov.pl
 pt.it
 pu.it
 pub.sa
+publ.cv
 publ.pt
 pueblo.bo
 pug.it
@@ -4322,6 +4328,7 @@ sowa.ibaraki.jp
 sp.gov.br
 sp.it
 spjelkavik.no
+sport.eg
 sport.hu
 spydeberg.no
 sr.gov.pl
@@ -4731,6 +4738,7 @@ tuyenquang.vn
 tv.bb
 tv.bo
 tv.br
+tv.eg
 tv.im
 tv.in
 tv.it
@@ -5044,7 +5052,6 @@ xn--c3s14m.jp
 xn--cesena-forl-mcb.it
 xn--cesenaforl-i8a.it
 xn--ciqpn.hk
-xn--czrw28b.tw
 xn--d1at.xn--90a3ac
 xn--d5qv7z876c.jp
 xn--davvenjrga-y4a.no
@@ -5239,7 +5246,6 @@ xn--trna-woa.no
 xn--troms-zua.no
 xn--tysvr-vra.no
 xn--uc0atv.hk
-xn--uc0atv.tw
 xn--uc0atv.xn--j6w193g
 xn--uc0ay4a.hk
 xn--uist22h.jp
@@ -5269,7 +5275,6 @@ xn--yer-zna.no
 xn--ygarden-p1a.no
 xn--ystre-slidre-ujb.no
 xn--zbx025d.jp
-xn--zf0ao64a.tw
 xn--zf0avx.hk
 xz.cn
 y.bg
