@@ -182,7 +182,8 @@ def http_request(verb, url, params = nil)
     "Origin" => referer
   }
 
-  Aitch.public_send(verb, url: url, headers: headers, params: params, options: {expect: 200})
+  Aitch.public_send(verb, url: url, headers: headers, params: params,
+                          options: {expect: 200})
 end
 
 def root_domains(domains)
@@ -190,7 +191,7 @@ def root_domains(domains)
     RootDomain.call(domain)
   end
 
-  processed_domains.reject(&:nil?)
+  processed_domains.compact
 end
 
 def thread
@@ -204,7 +205,8 @@ end
 def load_github_url(url)
   puts "=> Fetching #{url}"
 
-  basename = URI.parse(url).path[%r{/([^/]+/[^/]+)}, 1].tr("/", "_").tr("-", "_")
+  basename = URI.parse(url).path[%r{/([^/]+/[^/]+)}, 1].tr("/", "_").tr("-",
+                                                                        "_")
   path = "disposable/#{basename}.txt"
   domains = load_file(path)
 
@@ -227,5 +229,5 @@ rescue StandardError => error
 end
 
 def normalize_list(list)
-  list.flatten.map(&:chomp).compact.reject(&:empty?) - EXCEPTIONS
+  list.flatten.filter_map(&:chomp).reject(&:empty?) - EXCEPTIONS
 end

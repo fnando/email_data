@@ -1,3 +1,4 @@
+8alias.com
 8shield.net
 aleeas.com
 anonaddy.com
@@ -5,6 +6,7 @@ anonaddy.me
 bump.email
 bumpmail.io
 countermail.com
+dralias.com
 duck.com
 forwardemail.net
 improvmx.com
@@ -20,6 +22,7 @@ proxiedmail.com
 safemail.se
 simplelogin.co
 simplelogin.com
+simplelogin.fr
 slmail.me
 soverin.net
 startmail.com
