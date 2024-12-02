@@ -68,8 +68,8 @@ module EmailData
           @model.where(name: value).exists?
         end
 
-        def each(&block)
-          @model.find_each(&block)
+        def each(&)
+          @model.find_each(&)
         end
       end
 

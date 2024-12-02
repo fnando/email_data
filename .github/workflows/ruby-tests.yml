@@ -9,6 +9,12 @@ on:
   workflow_dispatch:
     inputs: {}
 
+ env:
+    POSTGRES_HOST: postgres
+    POSTGRES_PORT: 5432
+    PGHOST: postgres
+    PGUSER: postgres
+
 jobs:
   build:
     name: Tests with Ruby ${{ matrix.ruby }} and ${{ matrix.gemfile }}
@@ -19,12 +25,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: ["2.7", "3.0", "3.1"]
+        ruby: ["3.1", "3.2", "3.3"]
         gemfile:
           - Gemfile
     services:
       postgres:
-        image: postgres:11.5
+        image: postgres
         ports: ["5432:5432"]
         options:
           --health-cmd pg_isready --health-interval 10s --health-timeout 5s
@@ -40,7 +46,7 @@ jobs:
             ${{ runner.os }}-${{ matrix.ruby }}-gems-${{
             hashFiles(matrix.gemfile) }}
 
-      - name: Install PostgreSQL 11 client
+      - name: Install PostgreSQL client
         run: |
           sudo apt -y install libpq-dev
 
@@ -59,8 +65,6 @@ jobs:
 
       - name: Run Tests
         env:
-          PGHOST: localhost
-          PGUSER: postgres
           BUNDLE_GEMFILE: ${{ matrix.gemfile }}
         run: |
           psql -U postgres -c "create database test"

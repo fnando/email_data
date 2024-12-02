@@ -10,6 +10,6 @@ require "email_data/source/active_record"
 require "minitest/utils"
 require "minitest/autorun"
 
-Dir["#{__dir__}/support/**/*.rb"].sort.each do |file|
+Dir["#{__dir__}/support/**/*.rb"].each do |file|
   require file
 end
