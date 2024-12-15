@@ -30,6 +30,7 @@ abu.yamaguchi.jp
 ac.ae
 ac.at
 ac.be
+ac.bw
 ac.ci
 ac.cn
 ac.cr
@@ -358,7 +359,6 @@ beardu.no
 bedzin.pl
 beiarn.no
 bel.tr
-belau.pw
 belem.br
 belluno.it
 benevento.it
@@ -639,6 +639,7 @@ co.ag
 co.am
 co.ao
 co.at
+co.az
 co.bb
 co.bi
 co.bj
@@ -677,7 +678,6 @@ co.ni
 co.nz
 co.om
 co.pn
-co.pw
 co.rs
 co.rw
 co.ss
@@ -955,7 +955,6 @@ ed.ao
 ed.ci
 ed.cr
 ed.jp
-ed.pw
 edogawa.tokyo.jp
 edu.ac
 edu.af
@@ -1152,7 +1151,6 @@ farsund.no
 fauske.no
 fc.it
 fe.it
-fed.us
 federation.aero
 fedje.no
 feira.br
@@ -1347,7 +1345,6 @@ go.it
 go.jp
 go.ke
 go.kr
-go.pw
 go.th
 go.tj
 go.tz
@@ -1412,6 +1409,7 @@ gov.bn
 gov.br
 gov.bs
 gov.bt
+gov.bw
 gov.by
 gov.bz
 gov.cd
@@ -1488,6 +1486,7 @@ gov.pn
 gov.pr
 gov.ps
 gov.pt
+gov.pw
 gov.py
 gov.qa
 gov.rs
@@ -2245,7 +2244,6 @@ kherson.ua
 khmelnitskiy.ua
 khmelnytskyi.ua
 kibichuo.okayama.jp
-kids.us
 kiengiang.vn
 kiev.ua
 kiho.mie.jp
@@ -3115,6 +3113,7 @@ net.bo
 net.br
 net.bs
 net.bt
+net.bw
 net.bz
 net.ci
 net.cm
@@ -3496,7 +3495,6 @@ or.jp
 or.ke
 or.kr
 or.mu
-or.pw
 or.th
 or.tz
 or.ug
