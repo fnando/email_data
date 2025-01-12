@@ -1077,6 +1077,7 @@ edu.ua
 edu.uy
 edu.vc
 edu.ve
+edu.vg
 edu.vn
 edu.vu
 edu.ws
