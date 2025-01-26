@@ -51,6 +51,7 @@ ac.lk
 ac.ls
 ac.ma
 ac.me
+ac.ml
 ac.mu
 ac.mw
 ac.mz
@@ -233,6 +234,7 @@ art.br
 art.do
 art.dz
 art.ht
+art.ml
 art.sn
 arte.bo
 arts.nf
@@ -277,6 +279,7 @@ asso.gp
 asso.ht
 asso.km
 asso.mc
+asso.ml
 asso.nc
 asso.re
 association.aero
@@ -1895,6 +1898,7 @@ info.ke
 info.ki
 info.la
 info.ls
+info.ml
 info.mv
 info.nf
 info.ni
@@ -1913,6 +1917,7 @@ info.zm
 ing.pa
 ingatlan.hu
 ino.kochi.jp
+inst.ml
 insurance.aero
 int.ar
 int.az
@@ -3814,6 +3819,7 @@ ppg.br
 pr.gov.br
 pr.gov.pl
 pr.it
+pr.ml
 pr.us
 prato.it
 prd.fr
