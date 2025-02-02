@@ -1077,6 +1077,7 @@ edu.tr
 edu.tt
 edu.tw
 edu.ua
+edu.ug
 edu.uy
 edu.vc
 edu.ve
@@ -1514,6 +1515,7 @@ gov.tr
 gov.tt
 gov.tw
 gov.ua
+gov.ug
 gov.uk
 gov.vc
 gov.ve
@@ -2789,6 +2791,7 @@ mil.tr
 mil.tt
 mil.tw
 mil.tz
+mil.ug
 mil.uy
 mil.vc
 mil.ve
@@ -4818,6 +4821,7 @@ uruma.okinawa.jp
 uryu.hokkaido.jp
 us.gov.pl
 us.in
+us.ug
 usa.oita.jp
 ushiku.ibaraki.jp
 ustka.pl
