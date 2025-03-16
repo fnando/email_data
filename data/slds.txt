@@ -113,6 +113,7 @@ ah.cn
 ah.no
 ai.in
 ai.jo
+ai.kr
 ai.vn
 aibetsu.hokkaido.jp
 aichi.jp
@@ -1942,6 +1943,7 @@ intl.tn
 inuyama.aichi.jp
 inzai.chiba.jp
 io.in
+io.kr
 io.vn
 ip6.arpa
 iris.arpa
@@ -1966,6 +1968,7 @@ isla.pr
 isshiki.aichi.jp
 isumi.chiba.jp
 it.ao
+it.kr
 itabashi.tokyo.jp
 itako.ibaraki.jp
 itakura.gunma.jp
@@ -2679,6 +2682,7 @@ me.eg
 me.in
 me.it
 me.ke
+me.kr
 me.so
 me.ss
 me.tz
