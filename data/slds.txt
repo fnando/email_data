@@ -21,6 +21,7 @@ ab.ca
 abashiri.hokkaido.jp
 abc.br
 abeno.osaka.jp
+abg.ec
 abiko.chiba.jp
 abira.hokkaido.jp
 abo.pa
@@ -84,6 +85,7 @@ act.edu.au
 ad.jp
 adachi.tokyo.jp
 adm.br
+adm.ec
 adult.ht
 adv.br
 adv.mz
@@ -108,6 +110,7 @@ agrigento.it
 agro.bj
 agro.bo
 agro.pl
+agron.ec
 aguni.okinawa.jp
 ah.cn
 ah.no
@@ -231,9 +234,11 @@ aridagawa.wakayama.jp
 arita.saga.jp
 arna.no
 arq.br
+arqt.ec
 art.br
 art.do
 art.dz
+art.ec
 art.ht
 art.ml
 art.sn
@@ -343,6 +348,7 @@ balsfjord.no
 bamble.no
 bandai.fukushima.jp
 bando.ibaraki.jp
+bar.ec
 bar.pro
 bardu.no
 bari.it
@@ -404,6 +410,7 @@ biz.bb
 biz.cy
 biz.et
 biz.fj
+biz.gh
 biz.id
 biz.in
 biz.ki
@@ -575,6 +582,7 @@ cesenaforli.it
 ch.it
 championship.aero
 charter.aero
+chef.ec
 cherkassy.ua
 cherkasy.ua
 chernigov.ua
@@ -847,6 +855,7 @@ conference.aero
 consulado.st
 consultant.aero
 consulting.aero
+cont.ec
 contagem.br
 control.aero
 coop.ar
@@ -862,6 +871,7 @@ cooperativa.bo
 cosenza.it
 council.aero
 coz.br
+cpa.ec
 cpa.pro
 cq.cn
 cr.it
@@ -876,6 +886,7 @@ cs.in
 cs.it
 ct.it
 ct.us
+cue.ec
 cuiaba.br
 cuneo.it
 curitiba.br
@@ -907,6 +918,7 @@ delhi.in
 dell-ogliastra.it
 dellogliastra.it
 democracia.bo
+dent.ec
 dep.no
 deporte.bo
 des.br
@@ -916,8 +928,10 @@ det.br
 dev.br
 df.gov.br
 dgca.aero
+dgn.ec
 dielddanuorri.no
 dienbien.vn
+disco.ec
 divtasvuodna.no
 divttasvuotna.no
 dlugoleka.pl
@@ -925,6 +939,7 @@ dn.ua
 dnepropetrovsk.ua
 dni.us
 dnipropetrovsk.ua
+doc.ec
 donetsk.ua
 dongnai.vn
 dongthap.vn
@@ -1118,6 +1133,7 @@ ena.gifu.jp
 enebakk.no
 enf.br
 eng.br
+eng.ec
 eng.jo
 eng.pro
 engerdal.no
@@ -1136,6 +1152,7 @@ es.gov.br
 es.kr
 esan.hokkaido.jp
 esashi.hokkaido.jp
+esm.ec
 esp.br
 est.pr
 etajima.hiroshima.jp
@@ -1215,6 +1232,7 @@ fortal.br
 forum.hu
 fosnes.no
 fot.br
+fot.ec
 foz.br
 fr.it
 frana.no
@@ -1300,6 +1318,7 @@ g.se
 g12.br
 ga.us
 gaivuotna.no
+gal.ec
 galsa.no
 gamagori.aichi.jp
 game.tw
@@ -1583,6 +1602,7 @@ gv.ao
 gv.at
 gwangju.kr
 gx.cn
+gye.ec
 gyeongbuk.kr
 gyeonggi.kr
 gyeongnam.kr
@@ -1801,6 +1821,7 @@ ibaraki.jp
 ibaraki.osaka.jp
 ibestad.no
 ibigawa.gifu.jp
+ibr.ec
 ic.gov.pl
 ichiba.tokushima.jp
 ichihara.chiba.jp
@@ -2470,6 +2491,7 @@ laquila.it
 lardal.no
 larvik.no
 laspezia.it
+lat.ec
 latina.it
 lavagis.no
 lavangen.no
@@ -2574,6 +2596,7 @@ lodingen.no
 log.br
 logistics.aero
 loisirs.bj
+loj.ec
 lom.it
 lom.no
 lombardia.it
@@ -2884,6 +2907,7 @@ mizunami.gifu.jp
 mizusawa.iwate.jp
 mjondalen.no
 mk.ua
+mktg.ec
 mn.it
 mn.us
 mo-i-rana.no
@@ -2907,6 +2931,7 @@ mol.it
 molde.no
 molise.it
 mombetsu.hokkaido.jp
+mon.ec
 money.bj
 monza-brianza.it
 monza-e-della-brianza.it
@@ -3146,6 +3171,7 @@ net.fj
 net.fm
 net.ge
 net.gg
+net.gh
 net.gl
 net.gn
 net.gp
@@ -3366,6 +3392,7 @@ nt.edu.au
 nt.no
 nt.ro
 ntr.br
+ntr.ec
 nu.ca
 nu.it
 numata.gunma.jp
@@ -3396,6 +3423,7 @@ odda.no
 odesa.ua
 odessa.ua
 odo.br
+odont.ec
 oe.yamagata.jp
 of.by
 of.no
@@ -3859,16 +3887,20 @@ pro.tt
 pro.vn
 prochowice.pl
 production.aero
+prof.ec
 prof.pr
 profesional.bo
 pruszkow.pl
 przeworsk.pl
 psc.br
 psi.br
+psic.ec
+psiq.ec
 psp.gov.pl
 psse.gov.pl
 pt.it
 pu.it
+pub.ec
 pub.sa
 publ.cv
 publ.pt
@@ -3962,6 +3994,7 @@ ringebu.no
 ringerike.no
 ringsaker.no
 rio.br
+rio.ec
 riobranco.br
 riopreto.br
 rishiri.hokkaido.jp
@@ -3993,6 +4026,7 @@ rovno.ua
 royken.no
 royrvik.no
 rr.gov.br
+rrpp.ec
 rs.gov.br
 ruovat.no
 rv.ua
@@ -4045,6 +4079,7 @@ sakura.tochigi.jp
 sakuragawa.ibaraki.jp
 sakurai.nara.jp
 sakyo.kyoto.jp
+sal.ec
 salangen.no
 salat.no
 salerno.it
@@ -4522,6 +4557,7 @@ te.ua
 tec.br
 tec.mi.us
 tec.ve
+tech.ec
 tecnologia.bo
 tel.tr
 tempio-olbia.it
@@ -4741,8 +4777,10 @@ tsushima.nagasaki.jp
 tsuwano.shimane.jp
 tsuyama.okayama.jp
 tt.im
+tul.ec
 tur.ar
 tur.br
+tur.ec
 turek.pl
 turin.it
 turystyka.pl
@@ -4785,6 +4823,7 @@ ueno.gunma.jp
 uenohara.yamanashi.jp
 ug.gov.pl
 ugim.gov.pl
+uio.ec
 uji.kyoto.jp
 ujiie.tochigi.jp
 ujitawara.kyoto.jp
@@ -4903,6 +4942,7 @@ vestre-slidre.no
 vestre-toten.no
 vestvagoy.no
 vet.br
+vet.ec
 veterinaire.km
 vevelstad.no
 vf.no
@@ -5290,6 +5330,7 @@ xn--ygarden-p1a.no
 xn--ystre-slidre-ujb.no
 xn--zbx025d.jp
 xn--zf0avx.hk
+xxx.ec
 xz.cn
 y.bg
 y.se
