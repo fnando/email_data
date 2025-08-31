@@ -214,6 +214,7 @@ ap.gov.br
 ap.gov.pl
 ap.it
 aparecida.br
+api.br
 app.br
 aq.it
 aquila.it
@@ -1815,6 +1816,7 @@ i.bg
 i.ng
 i.ph
 i.se
+ia.br
 ia.us
 ibara.okayama.jp
 ibaraki.ibaraki.jp
@@ -4157,7 +4159,6 @@ sch.zm
 school.ge
 school.nz
 school.za
-schools.nsw.edu.au
 sci.eg
 scientist.aero
 sd.cn
@@ -4343,6 +4344,7 @@ so.it
 sobetsu.hokkaido.jp
 soc.dz
 soc.lk
+social.br
 soctrang.vn
 sodegaura.chiba.jp
 soeda.fukuoka.jp
@@ -5333,6 +5335,7 @@ xn--ystre-slidre-ujb.no
 xn--zbx025d.jp
 xn--zf0avx.hk
 xxx.ec
+xyz.br
 xz.cn
 y.bg
 y.se
