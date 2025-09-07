@@ -2555,7 +2555,6 @@ lib.me.us
 lib.mi.us
 lib.mn.us
 lib.mo.us
-lib.ms.us
 lib.mt.us
 lib.nc.us
 lib.nd.us
