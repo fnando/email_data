@@ -30,6 +30,7 @@ abruzzo.it
 abu.yamaguchi.jp
 ac.ae
 ac.at
+ac.bd
 ac.be
 ac.bw
 ac.ci
@@ -114,6 +115,7 @@ agron.ec
 aguni.okinawa.jp
 ah.cn
 ah.no
+ai.bd
 ai.in
 ai.jo
 ai.kr
@@ -654,6 +656,7 @@ co.ao
 co.at
 co.az
 co.bb
+co.bd
 co.bi
 co.bj
 co.bw
@@ -723,6 +726,7 @@ com.aw
 com.az
 com.ba
 com.bb
+com.bd
 com.bh
 com.bi
 com.bj
@@ -985,6 +989,7 @@ edu.au
 edu.az
 edu.ba
 edu.bb
+edu.bd
 edu.bh
 edu.bi
 edu.bj
@@ -1428,6 +1433,7 @@ gov.au
 gov.az
 gov.ba
 gov.bb
+gov.bd
 gov.bf
 gov.bh
 gov.bm
@@ -1818,6 +1824,7 @@ i.ph
 i.se
 ia.br
 ia.us
+ia.ve
 ibara.okayama.jp
 ibaraki.ibaraki.jp
 ibaraki.jp
@@ -1837,6 +1844,7 @@ ichinomiya.aichi.jp
 ichinomiya.chiba.jp
 ichinoseki.iwate.jp
 id.au
+id.bd
 id.cv
 id.ir
 id.lv
@@ -1912,6 +1920,7 @@ inf.cu
 inf.mk
 info.az
 info.bb
+info.bd
 info.bj
 info.bo
 info.ec
@@ -1992,6 +2001,7 @@ isla.pr
 isshiki.aichi.jp
 isumi.chiba.jp
 it.ao
+it.bd
 it.kr
 itabashi.tokyo.jp
 itako.ibaraki.jp
@@ -2774,6 +2784,7 @@ mil.al
 mil.ar
 mil.az
 mil.ba
+mil.bd
 mil.bo
 mil.br
 mil.by
@@ -3146,6 +3157,7 @@ net.au
 net.az
 net.ba
 net.bb
+net.bd
 net.bh
 net.bj
 net.bm
@@ -3557,6 +3569,7 @@ org.au
 org.az
 org.ba
 org.bb
+org.bd
 org.bh
 org.bi
 org.bj
@@ -4144,6 +4157,7 @@ sc.tz
 sc.ug
 sc.us
 sch.ae
+sch.bd
 sch.id
 sch.ir
 sch.jo
@@ -4790,6 +4804,7 @@ turystyka.pl
 tuscany.it
 tuyenquang.vn
 tv.bb
+tv.bd
 tv.bo
 tv.br
 tv.eg
