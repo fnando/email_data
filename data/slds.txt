@@ -351,6 +351,7 @@ balsfjord.no
 bamble.no
 bandai.fukushima.jp
 bando.ibaraki.jp
+bank.in
 bar.ec
 bar.pro
 bardu.no
@@ -1198,6 +1199,7 @@ fi.it
 fie.ee
 film.hu
 fin.ec
+fin.in
 fin.tn
 finnoy.no
 firenze.it
