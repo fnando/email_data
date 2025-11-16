@@ -435,7 +435,6 @@ biz.vn
 biz.zm
 bizen.okayama.jp
 bj.cn
-bjarkoy.no
 bjerkreim.no
 bjugn.no
 bl.it
@@ -1015,6 +1014,7 @@ edu.ee
 edu.eg
 edu.es
 edu.et
+edu.fj
 edu.fm
 edu.gd
 edu.ge
@@ -1848,6 +1848,7 @@ ichinoseki.iwate.jp
 id.au
 id.bd
 id.cv
+id.fj
 id.ir
 id.lv
 id.ly
@@ -2968,7 +2969,6 @@ moseushi.hokkaido.jp
 mosjoen.no
 moskenes.no
 moss.no
-mosvik.no
 motegi.tochigi.jp
 motobu.okinawa.jp
 motosu.gifu.jp
@@ -5110,7 +5110,6 @@ xn--bhcavuotna-s4a.no
 xn--bhccavuotna-k7a.no
 xn--bidr-5nac.no
 xn--bievt-0qa.no
-xn--bjarky-fya.no
 xn--bjddar-pta.no
 xn--blt-elab.no
 xn--bmlo-gra.no
