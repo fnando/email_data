@@ -1700,8 +1700,6 @@ hemne.no
 hemnes.no
 hemsedal.no
 herad.no
-hercules-app.com
-hercules-dev.com
 heroy.more-og-romsdal.no
 heroy.nordland.no
 hi.cn
@@ -3531,7 +3529,6 @@ on.ca
 onagawa.miyagi.jp
 ong.br
 onga.fukuoka.jp
-onhercules.app
 onjuku.chiba.jp
 onna.okinawa.jp
 ono.fukui.jp
@@ -3816,7 +3813,6 @@ per.jo
 per.la
 per.nf
 perso.ht
-perso.sn
 perso.tn
 perugia.it
 pesaro-urbino.it
