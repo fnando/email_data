@@ -57,6 +57,7 @@ module EmailData
           .lines
           .map(&:chomp)
           .reject(&:empty?)
+          .to_set
       end
     end
   end

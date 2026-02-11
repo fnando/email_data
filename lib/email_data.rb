@@ -2,6 +2,7 @@
 
 require "forwardable"
 require "pathname"
+require "set"
 
 module EmailData
   require "email_data/version"
