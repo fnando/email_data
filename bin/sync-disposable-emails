@@ -3,25 +3,23 @@
 
 require_relative "helpers"
 
-def temp_mail_address
-  path = "disposable/tempmailaddress.txt"
-  url = "https://www.tempmailaddress.com/index/index"
-
-  refresh_list(url: url, path: path) do |response|
-    data = JSON.parse(
-      response.body.gsub(/[^-,:\w@.{}"]/, ""),
-      symbolize_names: true
-    )
-    [data[:email].split("@").last]
-  end
-end
-
 def tempmail_io
   path = "disposable/tempmail_io.txt"
   url = "https://api.internal.temp-mail.io/api/v2/domains"
 
   refresh_list(url: url, path: path) do |response|
     JSON.parse(response.data)["domains"]
+  end
+end
+
+def load_10minute_mail
+  path = "disposable/10minutemail.txt"
+  url = "https://10minutemail.net/history.html"
+
+  refresh_list(url: url, path: path) do |response|
+    JSON.parse(
+      Base64.decode64(response.body[/var domain_json_base64="(.*?)";/, 1])
+    )
   end
 end
 
@@ -115,7 +113,7 @@ def process_scraping(element, value_selector)
   when /^attr\((.*?)\)/
     value = element[Regexp.last_match(1)]
   else
-    element.attributes.each do |_name, attr|
+    element.attributes.each_value do |attr|
       attr = attr.value.to_s
       value = attr if attr&.match?(host_regex)
     end
@@ -139,20 +137,14 @@ threads << thread { load_github_url("https://raw.githubusercontent.com/jespernis
 threads << thread { load_github_url("https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt") }
 threads << thread { load_github_url("https://gist.github.com/fnando/dafe542cac13f831bbf5521a55248116/raw/disposable.txt") }
 threads << thread { load_github_url("https://raw.githubusercontent.com/bitbar/disposable-email-domains/master/domains.txt") }
-threads << thread { temp_mail_address }
 threads << thread { tempmail_io }
 threads << thread { moakt }
 threads << thread { load_file("disposable/disposable_manually_added.txt") }
-
-10.times do
-  threads << thread { domain_scraping("10minutemail", "https://10minutemail.net/?lang=en", "#fe_text::attr(value)") }
-end
-
+threads << thread { load_10minute_mail }
 threads << thread { domain_scraping("forwardemail", "https://forwardemail.net/en/disposable-addresses", "code::text()") }
 threads << thread { domain_scraping("guerrillamail", "https://www.guerrillamail.com/", "select option::attr(value)") }
-threads << thread { domain_scraping("tempr", "https://tempr.email/", "select[name=DomainId] option::text()") }
-threads << thread { domain_scraping("fake_email_generator", "https://fakemailgenerator.net", "[data-mailhost]::attr(data-mailhost)") }
-threads << thread { domain_scraping("1secmail", "https://www.1secmail.com/", "select[id=domain] option::attr(value)") }
+threads << thread { domain_scraping("tempr", "https://trashmailr.com", "#login-domains option::attr(value)") }
+threads << thread { domain_scraping("fake_email_generator", "https://www.temporary-mail.net", ".dropdown-menu li b:last-of-type::text()") }
 threads << thread { domain_scraping("emailfake", "https://generator.email", ".tt-suggestion p::text()") }
 threads << thread { domain_scraping("emailfake", "https://emailfake.com/", ".tt-suggestion p::text()") }
 threads << thread { domain_scraping("emailfake", "https://email-fake.com/", ".tt-suggestion p::text()") }
@@ -186,11 +178,11 @@ end
 
 ignore_domains = normalize_list(File.read("#{__dir__}/../data/free_email_domains.txt").lines)
                  .map do |domain|
-  RootDomain.call(domain)
+                   RootDomain.call(domain)
 end
 ignore_domains += normalize_list(File.read("#{__dir__}/../data/private_relays.txt").lines)
                   .map do |line|
-  RootDomain.call(line)
+                    RootDomain.call(line)
 end
 
 puts "=> Normalize domains (count: #{domains.size})"

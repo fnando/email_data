@@ -16,6 +16,7 @@ require "timeout"
 require "active_support/all"
 require "root_domain"
 require "email_data"
+require "base64"
 
 EXCEPTIONS = File.read("#{__dir__}/../data/manual/exceptions.txt").lines.map(&:chomp)
 
