@@ -551,7 +551,6 @@ cc.mo.us
 cc.ms.us
 cc.mt.us
 cc.nc.us
-cc.nd.us
 cc.ne.us
 cc.nh.us
 cc.nj.us
@@ -2574,7 +2573,6 @@ lib.mn.us
 lib.mo.us
 lib.mt.us
 lib.nc.us
-lib.nd.us
 lib.ne.us
 lib.nh.us
 lib.nj.us
