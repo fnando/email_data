@@ -116,6 +116,7 @@ aguni.okinawa.jp
 ah.cn
 ah.no
 ai.bd
+ai.id
 ai.in
 ai.jo
 ai.kr
