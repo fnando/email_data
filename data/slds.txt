@@ -221,7 +221,6 @@ aparecida.br
 api.br
 app.br
 aq.it
-aquila.it
 ar.it
 ar.us
 arai.shizuoka.jp
@@ -4442,6 +4441,9 @@ strand.no
 stranda.no
 stryn.no
 student.aero
+su.it
+sud-sardegna.it
+sudsardegna.it
 sue.fukuoka.jp
 suedtirol.it
 suginami.tokyo.jp
@@ -4764,7 +4766,6 @@ trentinoaltoadige.it
 trentinos-tirol.it
 trentinostirol.it
 trentinosud-tirol.it
-trentinosudtirol.it
 trentinosued-tirol.it
 trentinosuedtirol.it
 trentinsud-tirol.it
@@ -4935,7 +4936,6 @@ vaksdal.no
 val-d-aosta.it
 val-daosta.it
 vald-aosta.it
-valdaosta.it
 valer.hedmark.no
 valer.ostfold.no
 valle-aosta.it
@@ -4969,6 +4969,7 @@ venezia.it
 venice.it
 vennesla.no
 verbania.it
+verbano-cusio-ossola.it
 vercelli.it
 verdal.no
 verona.it
