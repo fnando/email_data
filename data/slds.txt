@@ -1829,6 +1829,7 @@ i.bg
 i.ng
 i.ph
 i.se
+ia.bo
 ia.br
 ia.us
 ia.ve
