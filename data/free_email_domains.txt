@@ -180,6 +180,7 @@ homemail.com
 hot-shot.com
 hotmail.co.uk
 hotmail.com
+hotmail.ca
 hotmail.de
 hotmail.es
 hotmail.fr
